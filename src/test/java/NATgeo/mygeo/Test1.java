@@ -4,6 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import java.io.IOException;
 import java.sql.Driver;
+import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.By.ByCssSelector;
@@ -30,7 +31,7 @@ public class Test1 {
 	public void TestA_user_login_check() throws IOException, InterruptedException {
 
 		new Back_Test1().TestA_user_login_check(driver);
-
+		
 	
 	}
 
@@ -41,12 +42,4 @@ public class Test1 {
 		new Back_Test1().TestB_user_invalid_login_check(driver);
 	
 	}
-//
-//	public static void main(String... S) throws IOException {
-//
-//		WebDriver driver = new InitWebdriver().Browserdecider();
-//		driver.get("http:www.google.com");
-//
-//	}
-
 }
