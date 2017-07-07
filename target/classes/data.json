@@ -1,0 +1,30 @@
+{
+    "locators": [{
+            "id" : 1201,
+            "name" : "John Doe",
+            "active" : true
+        }
+     		],
+    "urls": [
+        {
+            "edubaseurl": "http://s-www.myngconnect.com/login/chooseMainUI.spr",
+            "id" : 1001,
+            "members": [1201, 1202, 1203]
+        }
+            ],
+
+	"password": [
+        {
+            "wrongpass": "password1",
+            "id" : 1001,
+            "members": [1201, 1202, 1203]
+        }
+            ],
+"ids": [
+        {
+            "eduid1": "LegacyInsideStage1499326371262@qaittest.com",
+            "id" : 1001,
+            "members": [1201, 1202, 1203]
+        }
+
+}

@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4687" started-at="2017-07-07T05:37:08Z" finished-at="2017-07-07T05:37:12Z">
+  <suite name="Suite1" duration-ms="11693" started-at="2017-07-07T10:40:41Z" finished-at="2017-07-07T10:40:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4687" started-at="2017-07-07T05:37:08Z" finished-at="2017-07-07T05:37:12Z">
+    <test name="login" duration-ms="11693" started-at="2017-07-07T10:40:41Z" finished-at="2017-07-07T10:40:52Z">
       <class name="NATgeo.mygeo.Test1">
-        <test-method status="PASS" signature="Initializer()[pri:0, instance:NATgeo.mygeo.Test1@343f4d3d]" name="Initializer" is-config="true" duration-ms="863" started-at="2017-07-07T11:07:08Z" finished-at="2017-07-07T11:07:09Z">
+        <test-method status="PASS" signature="Initializer()[pri:0, instance:NATgeo.mygeo.Test1@57baeedf]" name="Initializer" is-config="true" duration-ms="1018" started-at="2017-07-07T16:10:41Z" finished-at="2017-07-07T16:10:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initializer -->
-        <test-method status="PASS" signature="TestB_user_invalid_login_check()[pri:0, instance:NATgeo.mygeo.Test1@343f4d3d]" name="TestB_user_invalid_login_check" duration-ms="3811" started-at="2017-07-07T11:07:09Z" finished-at="2017-07-07T11:07:12Z">
+        <test-method status="PASS" signature="TestA_user_invalid_login_check()[pri:0, instance:NATgeo.mygeo.Test1@57baeedf]" name="TestA_user_invalid_login_check" duration-ms="5249" started-at="2017-07-07T16:10:42Z" finished-at="2017-07-07T16:10:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestB_user_invalid_login_check -->
+        </test-method> <!-- TestA_user_invalid_login_check -->
+        <test-method status="PASS" signature="TestB_user_login_check()[pri:0, instance:NATgeo.mygeo.Test1@57baeedf]" name="TestB_user_login_check" duration-ms="2938" started-at="2017-07-07T16:10:47Z" depends-on-methods="NATgeo.mygeo.Test1.TestA_user_invalid_login_check" finished-at="2017-07-07T16:10:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestB_user_login_check -->
+        <test-method status="PASS" signature="TestC_user_logout_check()[pri:0, instance:NATgeo.mygeo.Test1@57baeedf]" name="TestC_user_logout_check" duration-ms="2364" started-at="2017-07-07T16:10:50Z" depends-on-methods="NATgeo.mygeo.Test1.TestB_user_login_check" finished-at="2017-07-07T16:10:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestC_user_logout_check -->
+        <test-method status="PASS" signature="Closer()[pri:0, instance:NATgeo.mygeo.Test1@57baeedf]" name="Closer" is-config="true" duration-ms="108" started-at="2017-07-07T16:10:52Z" finished-at="2017-07-07T16:10:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Closer -->
       </class> <!-- NATgeo.mygeo.Test1 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- login -->
+  </suite> <!-- Suite1 -->
 </testng-results>
