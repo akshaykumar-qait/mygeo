@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="5068" started-at="2017-07-07T03:54:18Z" finished-at="2017-07-07T03:54:23Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="5068" started-at="2017-07-07T03:54:18Z" finished-at="2017-07-07T03:54:23Z">
+      <class name="NATgeo.mygeo.Test1">
+        <test-method status="PASS" signature="Initializer()[pri:0, instance:NATgeo.mygeo.Test1@343f4d3d]" name="Initializer" is-config="true" duration-ms="920" started-at="2017-07-07T09:24:18Z" finished-at="2017-07-07T09:24:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Initializer -->
+        <test-method status="PASS" signature="TestA_user_login_check()[pri:0, instance:NATgeo.mygeo.Test1@343f4d3d]" name="TestA_user_login_check" duration-ms="4138" started-at="2017-07-07T09:24:19Z" finished-at="2017-07-07T09:24:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestA_user_login_check -->
+      </class> <!-- NATgeo.mygeo.Test1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
