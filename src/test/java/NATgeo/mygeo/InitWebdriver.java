@@ -21,7 +21,7 @@ public class InitWebdriver {
 		String getbrowservalue = optionFileReader("browser");
 		if(getbrowservalue.equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "resources/Linux_drivers//chromedriver");
 			
 			driver = new ChromeDriver();
 
@@ -30,7 +30,7 @@ public class InitWebdriver {
 		else if(getbrowservalue.equals("firefox"))
 		{
 			
-			System.setProperty("webdriver.gecko.driver", "resources/geckodriver");
+			System.setProperty("webdriver.gecko.driver", "resources/Linux_drivers//geckodriver");
 			
 			driver = new FirefoxDriver();
 

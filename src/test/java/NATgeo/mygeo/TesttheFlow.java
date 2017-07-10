@@ -1,6 +1,7 @@
 package NATgeo.mygeo;
 
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterGroups;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
@@ -39,29 +40,29 @@ public class TesttheFlow {
 	@AfterMethod
 	void after_method()
 	{
-		System.out.println("after methods");
+		//System.out.println("after methods");
 	}
 	
 	@BeforeMethod
 	void before_method()
 	{
-		System.out.println("before the methods");
+		//System.out.println("before the methods");
 	}
 	
-	@Test(dependsOnMethods="test2")
+	@Test(dependsOnMethods="test2",groups="a")
 	void test1()
 	{
 		System.out.println("test1");
 	}
 	
 	
-	@Test(dependsOnMethods="test3")
+	@Test(dependsOnMethods="test3",groups="b")
 	void test2()
 	{
 		System.out.println("test2");	
 	}
 	
-	@Test(dependsOnMethods="test4")
+	@Test(dependsOnMethods="test4",groups="a")
 	void test3()
 	{
 		System.out.println("test3");
@@ -101,6 +102,12 @@ public class TesttheFlow {
 	void test9()
 	{
 		System.out.println("test9");
+	}
+	
+	@AfterGroups
+	void aftr_grp()
+	{
+		System.out.println("after the groups..");
 	}
 	
 }

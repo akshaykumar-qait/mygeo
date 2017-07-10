@@ -7,9 +7,7 @@
         <methods>
           <include name="Initializer"/>
           <include name="TestA_user_invalid_login_check"/>
-          <include name="TestC_user_logout_check"/>
           <include name="Closer"/>
-          <include name="TestB_user_login_check"/>
         </methods>
       </class> <!-- NATgeo.mygeo.Test1 -->
     </classes>
