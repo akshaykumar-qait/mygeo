@@ -6,7 +6,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
-public class DataReader {
+public class JsonDataReader {
 
 	public String readit(String key, String type) {
 
@@ -19,19 +19,19 @@ public class DataReader {
 			
 			if(type.equals("ids"))
 			{
-				resFile="resources/Test1/ids.json";
+				resFile="resources/Json_Files/ids.json";
 			}
 			else if(type.equals("locators"))
 			{
-				resFile="resources/Test1/locators.json";
+				resFile="resources/Json_Files/locators.json";
 			}
 			else if(type.equals("password"))
 			{
-				resFile="resources/Test1/passwords.json";
+				resFile="resources/Json_Files/passwords.json";
 			}
 			else if(type.equals("urls"))
 			{
-				resFile="resources/Test1/urls.json";
+				resFile="resources/Json_Files/urls.json";
 			}
 			
 			mainJsonObj = (JSONObject) parser.parse(new FileReader(resFile));

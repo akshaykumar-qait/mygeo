@@ -7,13 +7,13 @@ public class Test1help {
 	
 	WebElementUse useElements;
 	Wait_for_element waitElements;
-	DataReader read;
+	JsonDataReader read;
 	
 	public Test1help() {
 		// TODO Auto-generated constructor stub
 	useElements = new WebElementUse();
 	waitElements = new Wait_for_element();
-	read = new DataReader();
+	read = new JsonDataReader();
 	}
 
 	// usefull

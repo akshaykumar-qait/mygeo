@@ -16,7 +16,7 @@ public class Test1 {
 	Test1help temp_Obj;
 	WebElementUse useElements;
 	Wait_for_element waitElements;
-	DataReader data;
+	JsonDataReader data;
 	
 
 	@BeforeTest
@@ -26,7 +26,7 @@ public class Test1 {
 		driver = new InitWebdriver().Browserdecider();
 		useElements = new WebElementUse();
 		waitElements = new Wait_for_element();
-		data = new DataReader();
+		data = new JsonDataReader();
 	
 	}
 

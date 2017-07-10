@@ -21,7 +21,5 @@ public class Wait_for_element {
 
 	}
 	
-	
-	
 
 }
