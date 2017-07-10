@@ -17,9 +17,10 @@ public class OptionReader {
 
 		String arrsplit[],temp[] = null;
 		while ((readLine = b.readLine()) != null) {
+			
 			arrsplit = readLine.split("=");
 
-			if (arrsplit[0].equals(optionKey)) {
+			if (arrsplit[0].equals(optionKey)&&!arrsplit[0].startsWith("#")) {
 				flag=true;
 				temp=readLine.split("=");
 			}

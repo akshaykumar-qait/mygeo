@@ -3,6 +3,7 @@ package Readers;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Iterator;
 
@@ -17,11 +18,8 @@ public class XlsxReader {
 
 	private XSSFWorkbook myWorkBook;
 
-	
 	public String readit(String Key, String type) throws IOException {
 
-		
-		
 		File myfile;
 
 		String resFile = null;
@@ -35,8 +33,7 @@ public class XlsxReader {
 			resFile = "resources/Excel_Files/urls.xlsx";
 		}
 
-		
-		 myfile = new File(resFile);
+		myfile = new File(resFile);
 		FileInputStream fis = new FileInputStream(myfile);
 		myWorkBook = new XSSFWorkbook(fis);
 
@@ -56,17 +53,59 @@ public class XlsxReader {
 
 				Cell cell = cellIterator.next();
 
-				if(cell.getStringCellValue().equals(Key))
-				{
-					
+				if (cell.getStringCellValue().equals(Key)) {
+
 					return cellIterator.next().toString();
 				}
-				
-				}
-			}
-		return null;
-		}
 
+			}
+		}
+		return null;
 	}
 
+	void writeit(String Key, String value, String type) throws IOException {
 
+		File myfile;
+
+		String resFile = null;
+		if (type.equals("ids")) {
+			resFile = "resources/Excel_Files/ids.xlsx";
+		} else if (type.equals("locators")) {
+			resFile = "resources/Excel_Files/locators.xlsx";
+		} else if (type.equals("password")) {
+			resFile = "resources/Excel_Files/passwords.xlsx";
+		} else if (type.equals("urls")) {
+			resFile = "resources/Excel_Files/urls.xlsx";
+		}
+
+		myfile = new File(resFile);
+		FileInputStream fis = new FileInputStream(myfile);
+		myWorkBook = new XSSFWorkbook(fis);
+
+		// Return first sheet from the XLSX workbook
+		XSSFSheet mySheet = myWorkBook.getSheetAt(0);
+
+		// Get iterator to all the rows in current sheet
+		int rownum = mySheet.getLastRowNum();
+		System.out.println(rownum);
+
+		Row row = mySheet.createRow(++rownum);
+		Cell cell = row.createCell(0);
+		cell.setCellValue((String)Key);
+		cell = row.createCell(1);
+		cell.setCellValue((String)value);
+		
+		FileOutputStream os = new FileOutputStream(myfile);
+		myWorkBook.write(os);
+
+		
+		
+	}
+
+	public static void main(String... S) throws IOException {
+		new XlsxReader().writeit("akshay1", "prince2", "locators");
+	
+	
+	}
+
+}
