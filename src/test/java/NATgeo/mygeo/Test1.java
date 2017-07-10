@@ -8,6 +8,11 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import utility.Datadecider;
+import utility.InitWebdriver;
+import utility.Wait_for_element;
+import utility.WebElementUse;
+
 
 public class Test1 {
 
@@ -16,7 +21,7 @@ public class Test1 {
 	Test1help temp_Obj;
 	WebElementUse useElements;
 	Wait_for_element waitElements;
-	JsonDataReader data;
+	Datadecider data;
 	
 
 	@BeforeTest
@@ -26,7 +31,7 @@ public class Test1 {
 		driver = new InitWebdriver().Browserdecider();
 		useElements = new WebElementUse();
 		waitElements = new Wait_for_element();
-		data = new JsonDataReader();
+		data = new Datadecider();
 	
 	}
 
