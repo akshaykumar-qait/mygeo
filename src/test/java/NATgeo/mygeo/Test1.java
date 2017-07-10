@@ -3,17 +3,7 @@ package NATgeo.mygeo;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import java.io.IOException;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.omg.CORBA.UserException;
-import org.openqa.selenium.By;
-import org.openqa.selenium.By.ByCssSelector;
-import org.openqa.selenium.By.ById;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;

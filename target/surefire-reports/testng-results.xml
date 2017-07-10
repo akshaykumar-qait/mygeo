@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="26" started-at="2017-07-10T05:31:04Z" finished-at="2017-07-10T05:31:04Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="26" started-at="2017-07-10T05:31:04Z" finished-at="2017-07-10T05:31:04Z">
+      <class name="NATgeo.mygeo.TesttheFlow">
+        <test-method status="PASS" signature="before_test()[pri:0, instance:NATgeo.mygeo.TesttheFlow@43a25848]" name="before_test" is-config="true" duration-ms="7" started-at="2017-07-10T11:01:04Z" finished-at="2017-07-10T11:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before_test -->
+        <test-method status="PASS" signature="before_class()[pri:0, instance:NATgeo.mygeo.TesttheFlow@43a25848]" name="before_class" is-config="true" duration-ms="0" started-at="2017-07-10T11:01:04Z" finished-at="2017-07-10T11:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before_class -->
+        <test-method status="PASS" signature="test6()[pri:0, instance:NATgeo.mygeo.TesttheFlow@43a25848]" name="test6" duration-ms="0" started-at="2017-07-10T11:01:04Z" finished-at="2017-07-10T11:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6 -->
+        <test-method status="PASS" signature="after_method()[pri:0, instance:NATgeo.mygeo.TesttheFlow@43a25848]" name="after_method" is-config="true" duration-ms="0" started-at="2017-07-10T11:01:04Z" finished-at="2017-07-10T11:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after_method -->
+        <test-method status="PASS" signature="after_method()[pri:0, instance:NATgeo.mygeo.TesttheFlow@43a25848]" name="after_method" is-config="true" duration-ms="0" started-at="2017-07-10T11:01:04Z" finished-at="2017-07-10T11:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after_method -->
+        <test-method status="PASS" signature="test5()[pri:0, instance:NATgeo.mygeo.TesttheFlow@43a25848]" name="test5" duration-ms="0" started-at="2017-07-10T11:01:04Z" depends-on-methods="NATgeo.mygeo.TesttheFlow.test6" finished-at="2017-07-10T11:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method status="PASS" signature="after_method()[pri:0, instance:NATgeo.mygeo.TesttheFlow@43a25848]" name="after_method" is-config="true" duration-ms="0" started-at="2017-07-10T11:01:04Z" finished-at="2017-07-10T11:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after_method -->
+        <test-method status="PASS" signature="test4()[pri:0, instance:NATgeo.mygeo.TesttheFlow@43a25848]" name="test4" duration-ms="0" started-at="2017-07-10T11:01:04Z" depends-on-methods="NATgeo.mygeo.TesttheFlow.test5" finished-at="2017-07-10T11:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method status="PASS" signature="test3()[pri:0, instance:NATgeo.mygeo.TesttheFlow@43a25848]" name="test3" duration-ms="0" started-at="2017-07-10T11:01:04Z" depends-on-methods="NATgeo.mygeo.TesttheFlow.test4" finished-at="2017-07-10T11:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="after_method()[pri:0, instance:NATgeo.mygeo.TesttheFlow@43a25848]" name="after_method" is-config="true" duration-ms="0" started-at="2017-07-10T11:01:04Z" finished-at="2017-07-10T11:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after_method -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:NATgeo.mygeo.TesttheFlow@43a25848]" name="test2" duration-ms="0" started-at="2017-07-10T11:01:04Z" depends-on-methods="NATgeo.mygeo.TesttheFlow.test3" finished-at="2017-07-10T11:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="after_method()[pri:0, instance:NATgeo.mygeo.TesttheFlow@43a25848]" name="after_method" is-config="true" duration-ms="0" started-at="2017-07-10T11:01:04Z" finished-at="2017-07-10T11:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after_method -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:NATgeo.mygeo.TesttheFlow@43a25848]" name="test1" duration-ms="0" started-at="2017-07-10T11:01:04Z" depends-on-methods="NATgeo.mygeo.TesttheFlow.test2" finished-at="2017-07-10T11:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="after_method()[pri:0, instance:NATgeo.mygeo.TesttheFlow@43a25848]" name="after_method" is-config="true" duration-ms="0" started-at="2017-07-10T11:01:04Z" finished-at="2017-07-10T11:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after_method -->
+        <test-method status="PASS" signature="test7()[pri:1, instance:NATgeo.mygeo.TesttheFlow@43a25848]" name="test7" duration-ms="0" started-at="2017-07-10T11:01:04Z" finished-at="2017-07-10T11:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test7 -->
+        <test-method status="PASS" signature="test8()[pri:2, instance:NATgeo.mygeo.TesttheFlow@43a25848]" name="test8" duration-ms="0" started-at="2017-07-10T11:01:04Z" finished-at="2017-07-10T11:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test8 -->
+        <test-method status="PASS" signature="after_method()[pri:0, instance:NATgeo.mygeo.TesttheFlow@43a25848]" name="after_method" is-config="true" duration-ms="0" started-at="2017-07-10T11:01:04Z" finished-at="2017-07-10T11:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after_method -->
+        <test-method status="PASS" signature="after_method()[pri:0, instance:NATgeo.mygeo.TesttheFlow@43a25848]" name="after_method" is-config="true" duration-ms="0" started-at="2017-07-10T11:01:04Z" finished-at="2017-07-10T11:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after_method -->
+        <test-method status="PASS" signature="after_method()[pri:0, instance:NATgeo.mygeo.TesttheFlow@43a25848]" name="after_method" is-config="true" duration-ms="0" started-at="2017-07-10T11:01:04Z" finished-at="2017-07-10T11:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after_method -->
+        <test-method status="PASS" signature="after_class()[pri:0, instance:NATgeo.mygeo.TesttheFlow@43a25848]" name="after_class" is-config="true" duration-ms="0" started-at="2017-07-10T11:01:04Z" finished-at="2017-07-10T11:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after_class -->
+        <test-method status="PASS" signature="after_test()[pri:0, instance:NATgeo.mygeo.TesttheFlow@43a25848]" name="after_test" is-config="true" duration-ms="0" started-at="2017-07-10T11:01:04Z" finished-at="2017-07-10T11:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after_test -->
+        <test-method status="PASS" signature="test9()[pri:3, instance:NATgeo.mygeo.TesttheFlow@43a25848]" name="test9" duration-ms="0" started-at="2017-07-10T11:01:04Z" finished-at="2017-07-10T11:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test9 -->
+      </class> <!-- NATgeo.mygeo.TesttheFlow -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
