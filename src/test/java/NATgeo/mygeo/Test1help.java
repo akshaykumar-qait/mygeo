@@ -3,7 +3,7 @@ package NATgeo.mygeo;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import Readers.JsonDataReader;
+import Readers.JsonReader;
 import utility.Wait_for_element;
 import utility.WebElementUse;
 
@@ -11,13 +11,13 @@ public class Test1help {
 	
 	WebElementUse useElements;
 	Wait_for_element waitElements;
-	JsonDataReader read;
+	JsonReader read;
 	
 	public Test1help() {
 		// TODO Auto-generated constructor stub
 	useElements = new WebElementUse();
 	waitElements = new Wait_for_element();
-	read = new JsonDataReader();
+	read = new JsonReader();
 	}
 
 	// usefull

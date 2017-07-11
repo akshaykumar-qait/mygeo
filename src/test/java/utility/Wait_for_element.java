@@ -6,20 +6,21 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Wait_for_element {
-	
-	public void waits_by_css(WebDriver driver,String css)
-	{
+
+	public void waits_by_css(WebDriver driver, String css) {
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(css)));
 
 	}
-	
-	public void waits_by_id(WebDriver driver,String id)
-	{
+
+	public void waits_by_id(WebDriver driver, String id) {
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(id)));
 
 	}
-	
+
+	public static void main(String[] args) {
+		System.out.println(System.getProperty("os.name"));
+	}
 
 }

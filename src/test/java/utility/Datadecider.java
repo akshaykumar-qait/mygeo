@@ -3,9 +3,10 @@ package utility;
 import java.io.IOException;
 
 import Readers.ExcelReader;
-import Readers.JsonDataReader;
+import Readers.JsonReader;
 import Readers.OptionReader;
 import Readers.XlsxReader;
+import Readers.YamlReader;
 
 public class Datadecider {
 
@@ -13,13 +14,12 @@ public class Datadecider {
 		String data_value = new OptionReader().optionFileReader("readfrom");
 
 		if (data_value.equals("json")) {
-			String output = new JsonDataReader().readit(Key, type);
+			String output = new JsonReader().readit(Key, type);
 			return output;
 		} else if (data_value.equals("ods")) {
 
 			String output = new ExcelReader().readit(Key, type);
 			return output;
-
 		}
 
 		else if (data_value.equals("xlsx")) {
@@ -28,6 +28,15 @@ public class Datadecider {
 			return output;
 
 		}
+		else if (data_value.equals("yaml")) {
+
+			String output = new YamlReader().readit(Key, type);
+			return output;
+
+		}
+		
+		
+		
 
 		return null;
 

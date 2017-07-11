@@ -13,7 +13,8 @@ public class OptionReader {
 
 		BufferedReader b = new BufferedReader(new FileReader(f));
 
-		String readLine = "";boolean flag = false;
+		String readLine = "";
+		boolean flag = false;
 
 		String arrsplit[],temp[] = null;
 		while ((readLine = b.readLine()) != null) {
