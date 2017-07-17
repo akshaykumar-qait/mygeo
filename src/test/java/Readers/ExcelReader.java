@@ -9,19 +9,20 @@ import org.jopendocument.dom.spreadsheet.SpreadSheet;
 
 public class ExcelReader {
 
-	public String readit(String key, String type) {
+	public String readit(String key, String type) throws IOException {
 
 		File file;
+		OptionReader objread = new OptionReader();
 
 		String resFile = null;
 		if (type.equals("ids")) {
-			resFile = "resources/Excel_Files/ids.ods";
+			resFile = objread.optionFileReader("currentpath")+"/Excel_Files/ids.ods";
 		} else if (type.equals("locators")) {
-			resFile = "resources/Excel_Files/locators.ods";
+			resFile = objread.optionFileReader("currentpath")+"/Excel_Files/locators.ods";
 		} else if (type.equals("password")) {
-			resFile = "resources/Excel_Files/passwords.ods";
+			resFile = objread.optionFileReader("currentpath")+"/Excel_Files/passwords.ods";
 		} else if (type.equals("urls")) {
-			resFile = "resources/Excel_Files/urls.ods";
+			resFile = objread.optionFileReader("currentpath")+"/Excel_Files/urls.ods";
 		}
 
 		file = new File(resFile);
@@ -52,5 +53,14 @@ public class ExcelReader {
 		}
 		return null;
 	}
+	
+	
+	public static void main(String args[])
+	{
+		
+		
+		
+	}
+	
 
 }

@@ -14,7 +14,7 @@ import utility.Wait_for_element;
 import utility.WebElementUse;
 
 
-public class Login_Test {
+public class LoginTest {
 
 	WebDriver driver;
 	Login_help temp_Obj;
@@ -31,6 +31,7 @@ public class Login_Test {
 		useElements = new WebElementUse();
 		waitElements = new Wait_for_element();
 		data = new Datadecider();
+		
 	
 	}
 

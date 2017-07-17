@@ -19,11 +19,11 @@ public class InitWebdriver {
 		{
 			if (machine_type.equals("Linux"))
 			{
-				System.setProperty("webdriver.chrome.driver", "resources/Linux_drivers/chromedriver");
+				System.setProperty("webdriver.chrome.driver", "resource/Linux_drivers/chromedriver");
 			}
 			else if (machine_type.equals("Windows")) 
 			{
-				System.setProperty("webdriver.chrome.driver", "resources/Windows_drivers/chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", "resource/Windows_drivers/chromedriver.exe");
 			}
 
 			driver = new ChromeDriver();
@@ -33,11 +33,11 @@ public class InitWebdriver {
 			
 			if(machine_type.equals("Linux"))
 			{
-			System.setProperty("webdriver.gecko.driver", "resources/Linux_drivers/geckodriver");
+			System.setProperty("webdriver.gecko.driver", "resource/Linux_drivers/geckodriver");
 			}
 			else if(machine_type.equals("Windows"))
 			{
-				System.setProperty("webdriver.gecko.driver", "resources/Linux_drivers/geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver", "resource/Linux_drivers/geckodriver.exe");
 			}
 			
 			driver = new FirefoxDriver();

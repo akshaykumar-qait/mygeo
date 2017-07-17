@@ -10,7 +10,7 @@ public class OptionReader {
 
 	public String optionFileReader(String optionKey) throws IOException
 	{
-		File f = new File("resources/data.properties");
+		File f = new File("resource/data.properties");
 
 		BufferedReader b = new BufferedReader(new FileReader(f));
 
@@ -44,7 +44,7 @@ public class OptionReader {
 
 	public void writeit(String optionKey, Object optionValue) throws IOException {
 
-		File f = new File("/resources/data.properties");
+		File f = new File("resource/data.properties");
 
 		String readLine = "", olddata = "";
 		BufferedReader b = new BufferedReader(new FileReader(f));
@@ -61,7 +61,9 @@ public class OptionReader {
 		olddata = olddata + "\n";
 
 		try {
-			FileWriter fw = new FileWriter("src/main/resources/options.properties");
+			
+			
+			FileWriter fw = new FileWriter("resource/data.properties");
 			fw.append(olddata + optionKey + "=" + optionValue.toString());
 			fw.close();
 		} 
@@ -73,6 +75,15 @@ public class OptionReader {
 
 		// throw new UnsupportedOperationException("Not implemented.");
 	}
+	
+	
+	public static void main(String args[]) throws IOException
+	{
+		
+		new OptionReader().writeit("b", "chrome");
+		
+	}
+	
 	
 	
 	

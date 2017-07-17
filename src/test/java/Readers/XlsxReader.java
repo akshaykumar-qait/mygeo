@@ -22,15 +22,22 @@ public class XlsxReader {
 
 		File myfile;
 
+	OptionReader readopt= new OptionReader();
+	
+		
+		
 		String resFile = null;
+				//"resource/Login_test/Excel_Files/urls.xlsx";
+	
+		
 		if (type.equals("ids")) {
-			resFile = "resources/Excel_Files/ids.xlsx";
+			resFile = readopt.optionFileReader("currentpath")+"Excel_Files/ids.xlsx";
 		} else if (type.equals("locators")) {
-			resFile = "resources/Excel_Files/locators.xlsx";
+			resFile = readopt.optionFileReader("currentpath")+"Excel_Files/locators.xlsx";
 		} else if (type.equals("password")) {
-			resFile = "resources/Excel_Files/passwords.xlsx";
+			resFile = readopt.optionFileReader("currentpath")+"Excel_Files/passwords.xlsx";
 		} else if (type.equals("urls")) {
-			resFile = "resources/Excel_Files/urls.xlsx";
+			resFile = readopt.optionFileReader("currentpath")+"Excel_Files/urls.xlsx";
 		}
 
 		myfile = new File(resFile);
@@ -67,15 +74,18 @@ public class XlsxReader {
 
 		File myfile;
 
+		
+		
 		String resFile = null;
+		OptionReader objread = new OptionReader();
 		if (type.equals("ids")) {
-			resFile = "resources/Excel_Files/ids.xlsx";
+			resFile = objread .optionFileReader("currentpath")+"Excel_Files/ids.xlsx";
 		} else if (type.equals("locators")) {
-			resFile = "resources/Excel_Files/locators.xlsx";
+			resFile = objread.optionFileReader("currentpath")+"Excel_Files/locators.xlsx";
 		} else if (type.equals("password")) {
-			resFile = "resources/Excel_Files/passwords.xlsx";
+			resFile = objread.optionFileReader("currentpath")+"Excel_Files/passwords.xlsx";
 		} else if (type.equals("urls")) {
-			resFile = "resources/Excel_Files/urls.xlsx";
+			resFile = objread.optionFileReader("currentpath")+"/Excel_Files/urls.xlsx";
 		}
 
 		myfile = new File(resFile);
@@ -101,11 +111,13 @@ public class XlsxReader {
 		
 		
 	}
-
-	public static void main(String... S) throws IOException {
-		new XlsxReader().writeit("akshay1", "prince2", "locators");
 	
-	
+	public static void main(String args[]) throws IOException
+	{
+		
+	new XlsxReader().readit("Key", "type");	
+		
 	}
+
 
 }
