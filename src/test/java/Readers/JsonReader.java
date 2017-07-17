@@ -2,6 +2,7 @@ package Readers;
 
 import java.io.FileReader;
 
+import org.apache.bcel.generic.NEW;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -19,21 +20,23 @@ public class JsonReader {
 			
 			System.err.println("type is"+type);
 			
+		     OptionReader readopt = new OptionReader();
 			if(type.equals("ids"))
 			{
-				resFile="resources/Json_Files/ids.json";
+				
+				resFile=readopt.optionFileReader("currentpath")+"Json_Files/ids.json";
 			}
 			else if(type.equals("locators"))
 			{
-				resFile="resources/Json_Files/locators.json";
+				resFile=readopt.optionFileReader("currentpath")+"Json_Files/locators.json";
 			}
 			else if(type.equals("password"))
 			{
-				resFile="resources/Json_Files/passwords.json";
+				resFile=readopt.optionFileReader("currentpath")+"Json_Files/passwords.json";
 			}
 			else if(type.equals("urls"))
 			{
-				resFile="resources/Json_Files/urls.json";
+				resFile=readopt.optionFileReader("currentpath")+"Json_Files/urls.json";
 			}
 			
 			mainJsonObj = (JSONObject) parser.parse(new FileReader(resFile));

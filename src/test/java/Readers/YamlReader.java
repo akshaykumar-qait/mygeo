@@ -16,25 +16,27 @@ public class YamlReader {
 		String resFile = "";
 		
 		
+		OptionReader readopt = new OptionReader();
+		
 		try {
 			
 			System.err.println("type is"+type);
 			
 			if(type.equals("ids"))
 			{
-				resFile="resources/Yaml_Files/ids.yaml";
+				resFile=readopt.optionFileReader("currentpath")+"Yaml_Files/ids.yaml";
 			}
 			else if(type.equals("locators"))
 			{
-				resFile="resources/Yaml_Files/locators.yaml";
+				resFile=readopt.optionFileReader("currentpath")+"Yaml_Files/locators.yaml";
 			}
 			else if(type.equals("password"))
 			{
-				resFile="resources/Yaml_Files/passwords.yaml";
+				resFile=readopt.optionFileReader("currentpath")+"Yaml_Files/passwords.yaml";
 			}
 			else if(type.equals("urls"))
 			{
-				resFile="resources/Yaml_Files/urls.yaml";
+				resFile=readopt.optionFileReader("currentpath")+"Yaml_Files/urls.yaml";
 			}
 			
 		File file = new File(resFile);

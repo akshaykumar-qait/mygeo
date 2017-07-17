@@ -17,11 +17,14 @@ public class InitWebdriver {
 		String getbrowservalue = new OptionReader().optionFileReader("browser");
 		if (getbrowservalue.equals("chrome")) 
 		{
-			if (machine_type.equals("Linux"))
+			
+			System.out.println("value   "+  getbrowservalue +machine_type);
+			
+			if (machine_type.startsWith("Linux"))
 			{
 				System.setProperty("webdriver.chrome.driver", "resource/Linux_drivers/chromedriver");
 			}
-			else if (machine_type.equals("Windows")) 
+			else if (machine_type.startsWith("Windows")) 
 			{
 				System.setProperty("webdriver.chrome.driver", "resource/Windows_drivers/chromedriver.exe");
 			}
@@ -31,11 +34,11 @@ public class InitWebdriver {
 			return driver;
 		} else if (getbrowservalue.equals("firefox")) {
 			
-			if(machine_type.equals("Linux"))
+			if(machine_type.startsWith("Linux"))
 			{
 			System.setProperty("webdriver.gecko.driver", "resource/Linux_drivers/geckodriver");
 			}
-			else if(machine_type.equals("Windows"))
+			else if(machine_type.startsWith("Windows"))
 			{
 				System.setProperty("webdriver.gecko.driver", "resource/Linux_drivers/geckodriver.exe");
 			}

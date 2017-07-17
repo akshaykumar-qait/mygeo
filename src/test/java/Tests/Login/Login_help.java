@@ -23,7 +23,7 @@ public class Login_help {
 	useElements = new WebElementUse();
 	waitElements = new Wait_for_element();
 	read = new Datadecider();
-	new PathSetter().setPath("resource/Login_test/");
+	new PathSetter().setPath("src/test/java/Tests/Login/");
 	
 	}
 

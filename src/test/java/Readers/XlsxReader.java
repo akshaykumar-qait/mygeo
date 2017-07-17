@@ -39,6 +39,9 @@ public class XlsxReader {
 		} else if (type.equals("urls")) {
 			resFile = readopt.optionFileReader("currentpath")+"Excel_Files/urls.xlsx";
 		}
+		
+		
+		System.err.println(resFile);
 
 		myfile = new File(resFile);
 		FileInputStream fis = new FileInputStream(myfile);
