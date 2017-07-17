@@ -1,4 +1,4 @@
-package NATgeo.mygeo;
+package Tests.Login;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,13 +7,13 @@ import Readers.JsonReader;
 import utility.Wait_for_element;
 import utility.WebElementUse;
 
-public class Test1help {
+public class Login_help {
 	
 	WebElementUse useElements;
 	Wait_for_element waitElements;
 	JsonReader read;
 	
-	public Test1help() {
+	public Login_help() {
 		// TODO Auto-generated constructor stub
 	useElements = new WebElementUse();
 	waitElements = new Wait_for_element();

@@ -1,4 +1,4 @@
-package NATgeo.mygeo;
+package Tests.Login;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterGroups;

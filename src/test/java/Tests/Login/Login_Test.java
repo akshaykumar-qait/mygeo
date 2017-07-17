@@ -1,4 +1,4 @@
-package NATgeo.mygeo;
+package Tests.Login;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -14,11 +14,10 @@ import utility.Wait_for_element;
 import utility.WebElementUse;
 
 
-public class Test1 {
+public class Login_Test {
 
 	WebDriver driver;
-	
-	Test1help temp_Obj;
+	Login_help temp_Obj;
 	WebElementUse useElements;
 	Wait_for_element waitElements;
 	Datadecider data;
@@ -26,8 +25,8 @@ public class Test1 {
 
 	@BeforeTest
 	public void Initializer() throws IOException {
-
-		temp_Obj = new Test1help();
+		
+		temp_Obj = new Login_help();
 		driver = new InitWebdriver().Browserdecider();
 		useElements = new WebElementUse();
 		waitElements = new Wait_for_element();
@@ -38,7 +37,7 @@ public class Test1 {
 	@Test
 	public void TestA_user_invalid_login_check() throws IOException, InterruptedException {
 
-		driver = temp_Obj.open_the_login_page(driver,data.readit("edubaseurl","urls"));
+		driver=temp_Obj.open_the_login_page(driver,data.readit("edubaseurl","urls"));
 
 		driver = temp_Obj.login(driver, data.readit("eduid1", "ids"), data.readit("wrongpass", "password"));
 
@@ -65,8 +64,6 @@ public class Test1 {
 	
 	@Test(dependsOnMethods ="TestB_user_login_check")
 	public void TestC_user_logout_check() throws IOException, InterruptedException {
-
-		
 		waitElements.waits_by_css(driver,data.readit("logout_css","locators") );
 		useElements.webElement_click_by_css(driver, data.readit("logout_css","locators") );
 
