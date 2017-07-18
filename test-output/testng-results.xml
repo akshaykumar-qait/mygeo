@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46918" started-at="2017-07-17T19:13:55Z" finished-at="2017-07-17T19:14:42Z">
+  <suite name="Default suite" duration-ms="11245" started-at="2017-07-18T07:10:55Z" finished-at="2017-07-18T07:11:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="46918" started-at="2017-07-17T19:13:55Z" finished-at="2017-07-17T19:14:42Z">
+    <test name="Default test" duration-ms="11245" started-at="2017-07-18T07:10:55Z" finished-at="2017-07-18T07:11:06Z">
       <class name="Tests.Login.LoginTest">
-        <test-method status="PASS" signature="Initializer()[pri:0, instance:Tests.Login.LoginTest@8e7350]" name="Initializer" is-config="true" duration-ms="4383" started-at="2017-07-18T00:43:55Z" finished-at="2017-07-18T00:43:59Z">
+        <test-method status="PASS" signature="Initializer()[pri:0, instance:Tests.Login.LoginTest@5f341870]" name="Initializer" is-config="true" duration-ms="862" started-at="2017-07-18T12:40:55Z" finished-at="2017-07-18T12:40:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initializer -->
-        <test-method status="PASS" signature="TestA_user_invalid_login_check()[pri:0, instance:Tests.Login.LoginTest@8e7350]" name="TestA_user_invalid_login_check" duration-ms="15765" started-at="2017-07-18T00:43:59Z" finished-at="2017-07-18T00:44:15Z">
+        <test-method status="PASS" signature="TestA_user_invalid_login_check()[pri:0, instance:Tests.Login.LoginTest@5f341870]" name="TestA_user_invalid_login_check" duration-ms="4935" started-at="2017-07-18T12:40:56Z" finished-at="2017-07-18T12:41:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestA_user_invalid_login_check -->
-        <test-method status="PASS" signature="TestB_user_login_check()[pri:0, instance:Tests.Login.LoginTest@8e7350]" name="TestB_user_login_check" duration-ms="7522" started-at="2017-07-18T00:44:15Z" depends-on-methods="Tests.Login.LoginTest.TestA_user_invalid_login_check" finished-at="2017-07-18T00:44:23Z">
+        <test-method status="PASS" signature="TestB_user_login_check()[pri:0, instance:Tests.Login.LoginTest@5f341870]" name="TestB_user_login_check" duration-ms="2290" started-at="2017-07-18T12:41:01Z" depends-on-methods="Tests.Login.LoginTest.TestA_user_invalid_login_check" finished-at="2017-07-18T12:41:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestB_user_login_check -->
-        <test-method status="PASS" signature="TestC_user_logout_check()[pri:0, instance:Tests.Login.LoginTest@8e7350]" name="TestC_user_logout_check" duration-ms="5041" started-at="2017-07-18T00:44:23Z" depends-on-methods="Tests.Login.LoginTest.TestB_user_login_check" finished-at="2017-07-18T00:44:28Z">
+        <test-method status="PASS" signature="TestC_user_logout_check()[pri:0, instance:Tests.Login.LoginTest@5f341870]" name="TestC_user_logout_check" duration-ms="2982" started-at="2017-07-18T12:41:03Z" depends-on-methods="Tests.Login.LoginTest.TestB_user_login_check" finished-at="2017-07-18T12:41:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestC_user_logout_check -->
-        <test-method status="PASS" signature="Closer()[pri:0, instance:Tests.Login.LoginTest@8e7350]" name="Closer" is-config="true" duration-ms="14115" started-at="2017-07-18T00:44:28Z" finished-at="2017-07-18T00:44:42Z">
+        <test-method status="PASS" signature="Closer()[pri:0, instance:Tests.Login.LoginTest@5f341870]" name="Closer" is-config="true" duration-ms="155" started-at="2017-07-18T12:41:06Z" finished-at="2017-07-18T12:41:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Closer -->

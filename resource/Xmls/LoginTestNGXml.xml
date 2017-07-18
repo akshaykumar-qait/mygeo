@@ -3,7 +3,13 @@
 <suite name="Suite1">
 	
 
+<test name="first">
+		<classes>
+			<!-- <class name="Tests.Login.LoginTest" /> -->
+			<class name="Tests.TesttheFlow.TesttheFlow"></class>
+		</classes>
 
+	</test>
 	
 	<test name="second">
 		<classes>
@@ -13,13 +19,7 @@
 		</classes>
 
 	</test>
-	<test name="first">
-		<classes>
-			<!-- <class name="Tests.Login.LoginTest" /> -->
-			<class name="Tests.TesttheFlow.TesttheFlow"></class>
-		</classes>
-
-	</test>
+	
 
 	
 	<!-- <test name="test annotation demo"> -->

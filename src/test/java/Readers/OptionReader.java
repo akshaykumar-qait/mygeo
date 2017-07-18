@@ -33,7 +33,7 @@ public class OptionReader {
 		if(flag==true)
 		{
 			
-			return temp[1].trim().toLowerCase();
+			return temp[1].trim();
 		}
 		return null;
 
