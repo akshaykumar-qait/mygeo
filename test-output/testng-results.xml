@@ -1,33 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11245" started-at="2017-07-18T07:10:55Z" finished-at="2017-07-18T07:11:06Z">
+  <suite name="Default suite" duration-ms="7621" started-at="2017-07-20T05:38:33Z" finished-at="2017-07-20T05:38:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11245" started-at="2017-07-18T07:10:55Z" finished-at="2017-07-18T07:11:06Z">
-      <class name="Tests.Login.LoginTest">
-        <test-method status="PASS" signature="Initializer()[pri:0, instance:Tests.Login.LoginTest@5f341870]" name="Initializer" is-config="true" duration-ms="862" started-at="2017-07-18T12:40:55Z" finished-at="2017-07-18T12:40:56Z">
+    <test name="Default test" duration-ms="7621" started-at="2017-07-20T05:38:33Z" finished-at="2017-07-20T05:38:41Z">
+      <class name="Tests.gmail.JustCheck">
+        <test-method status="PASS" signature="just_check()[pri:0, instance:Tests.gmail.JustCheck@3c0ecd4b]" name="just_check" duration-ms="7607" started-at="2017-07-20T11:08:33Z" finished-at="2017-07-20T11:08:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Initializer -->
-        <test-method status="PASS" signature="TestA_user_invalid_login_check()[pri:0, instance:Tests.Login.LoginTest@5f341870]" name="TestA_user_invalid_login_check" duration-ms="4935" started-at="2017-07-18T12:40:56Z" finished-at="2017-07-18T12:41:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestA_user_invalid_login_check -->
-        <test-method status="PASS" signature="TestB_user_login_check()[pri:0, instance:Tests.Login.LoginTest@5f341870]" name="TestB_user_login_check" duration-ms="2290" started-at="2017-07-18T12:41:01Z" depends-on-methods="Tests.Login.LoginTest.TestA_user_invalid_login_check" finished-at="2017-07-18T12:41:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestB_user_login_check -->
-        <test-method status="PASS" signature="TestC_user_logout_check()[pri:0, instance:Tests.Login.LoginTest@5f341870]" name="TestC_user_logout_check" duration-ms="2982" started-at="2017-07-18T12:41:03Z" depends-on-methods="Tests.Login.LoginTest.TestB_user_login_check" finished-at="2017-07-18T12:41:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestC_user_logout_check -->
-        <test-method status="PASS" signature="Closer()[pri:0, instance:Tests.Login.LoginTest@5f341870]" name="Closer" is-config="true" duration-ms="155" started-at="2017-07-18T12:41:06Z" finished-at="2017-07-18T12:41:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Closer -->
-      </class> <!-- Tests.Login.LoginTest -->
+        </test-method> <!-- just_check -->
+      </class> <!-- Tests.gmail.JustCheck -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -5,17 +5,15 @@
 
 <test name="first">
 		<classes>
-			<!-- <class name="Tests.Login.LoginTest" /> -->
-			<class name="Tests.TesttheFlow.TesttheFlow"></class>
+			<class name="Tests.Login.LoginTest" />
 		</classes>
 
 	</test>
 	
 	<test name="second">
 		<classes>
-			<!-- <class name="Tests.Login.LoginTest" /> -->
-			<class name="Tests.Login.Test3.Testta"></class>
-
+			<class name="Tests.Login.LoginTest" />
+		
 		</classes>
 
 	</test>
