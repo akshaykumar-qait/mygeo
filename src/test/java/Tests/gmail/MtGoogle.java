@@ -117,14 +117,14 @@ public class MtGoogle {
 				.build();
 	}
 
-	public static void mains(String[] args) throws Exception {
+	public static void main6(String[] args) throws Exception {
 		
 		
 		//https://docs.google.com/spreadsheets/d/1n6DeLGHKvUd-_mziCo5Q5Juuq6w4cCpw2mqY46oCZL0/edit?usp=sharing
 		//https://docs.google.com/spreadsheets/d/1HluvvKnFcWTXf-ybcR97te2bTjVRUDWy9JdYU9f8ObU/edit?usp=sharing
 		//https://docs.google.com/spreadsheets/d/1HluvvKnFcWTXf-ybcR97te2bTjVRUDWy9JdYU9f8ObU/edit?usp=sharing
 		URL url = new URL(
-				"https://sheets.googleapis.com/v4/spreadsheets/1n6DeLGHKvUd-_mziCo5Q5Juuq6w4cCpw2mqY46oCZL0/values/A1:C?key=%20AIzaSyCwt2tn6wfyJY646Y-2DWYlRqVfkXqqkEg");
+				"https://sheets.googleapis.com/v4/spreadsheets/1n6DeLGHKvUd-_mziCo5Q5Juuq6w4cCpw2mqY46oCZL0/values/A1:C5?key=%20AIzaSyCwt2tn6wfyJY646Y-2DWYlRqVfkXqqkEg");
 
 		HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 		connection.setDoOutput(true);
