@@ -215,7 +215,7 @@ public class MtGoogle {
 
 	}
 
-	public static void main(String[] args) throws Exception {
+	public static void mainoo(String[] args) throws Exception {
 
 		// URL url = new URL(
 		// "https://sheets.googleapis.com/v4/spreadsheets/1n6DeLGHKvUd-_mziCo5Q5Juuq6w4cCpw2mqY46oCZL0/values/A:F:clear?access_token=ya29.GluOBC9EiyacIoMQtgAZlFbt-Xv_SGYivFWTfNDI86JxMRHTZVaK3lI57dxUgvNuaOr_zeUKH0DCCtmWLbpUjjgoKs_vvIEwkyYJ-Ufz9eq8sMQpCHBXGpGoV9BH");
@@ -275,6 +275,67 @@ public class MtGoogle {
 
 	}
 
+	
+	public static void main(String[] args) throws Exception {
+
+		// URL url = new URL(
+		// "https://sheets.googleapis.com/v4/spreadsheets/1n6DeLGHKvUd-_mziCo5Q5Juuq6w4cCpw2mqY46oCZL0/values/A:F:clear?access_token=ya29.GluOBC9EiyacIoMQtgAZlFbt-Xv_SGYivFWTfNDI86JxMRHTZVaK3lI57dxUgvNuaOr_zeUKH0DCCtmWLbpUjjgoKs_vvIEwkyYJ-Ufz9eq8sMQpCHBXGpGoV9BH");
+
+		
+		HttpExchange httpExchange;
+		URL url = new URL(
+				"https://sheets.googleapis.com/v4/spreadsheets/1n6DeLGHKvUd-_mziCo5Q5Juuq6w4cCpw2mqY46oCZL0/values/A1:A1:append?valueInputOption=USER_ENTERED&access_token=ya29.GluOBKprFqJj0fJvEoBUQamvF3JaKq73G8THuEGfkAHKwiXyc7H3NwEwulOJPhYheHFhBvf6YpCzdV0bOSapMxcL2gwhl5awzZK1uFrUzWD2WTCn5kvNDlRuZcw_");
+
+		String message =
+				"{" + " \"range\": \"A1:A1\", " + "  \"majorDimension\": \"ROWS\", " + "  \"values\": [ "
+				+ "  [\"shadab\",\"nishant\"]" + "]" + "}";
+
+		System.out.println(message);
+
+		try {
+			// instantiate the URL object with the target URL of the resource to
+			// request
+
+			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+
+			connection.setDoOutput(true);
+			connection.setRequestMethod("PUT");
+			connection.setRequestProperty("Content-Type", "application/json");
+			// connection.setFixedLengthStreamingMode(0);
+
+			// connection.connect();
+
+			OutputStreamWriter writer = new OutputStreamWriter(connection.getOutputStream(), "UTF-8");
+			// DataOutputStream writer = new
+			// DataOutputStream(connection.getOutputStream());
+
+			writer.write(message);
+		
+
+			writer.close();
+
+			BufferedReader br = new BufferedReader(new InputStreamReader((connection.getInputStream())));
+
+			String line = br.readLine();
+			while (line != null) {
+
+				line = br.readLine();
+				System.out.println(line);
+
+			}
+
+			System.out.println(connection.getResponseCode());
+
+		} catch (IOException e) {
+			// ...
+
+			e.printStackTrace();
+		}
+
+		// new MtGoogle().get_data();
+
+	}
+	
 	String get_data() {
 
 		try {
