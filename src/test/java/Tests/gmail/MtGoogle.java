@@ -38,6 +38,7 @@ import org.apache.oltu.oauth2.client.URLConnectionClient;
 import org.apache.oltu.oauth2.client.request.OAuthClientRequest;
 import org.apache.oltu.oauth2.client.response.OAuthJSONAccessTokenResponse;
 import org.apache.oltu.oauth2.common.message.types.GrantType;
+import org.eclipse.jetty.client.HttpExchange;
 
 public class MtGoogle {
 
@@ -219,12 +220,14 @@ public class MtGoogle {
 		// URL url = new URL(
 		// "https://sheets.googleapis.com/v4/spreadsheets/1n6DeLGHKvUd-_mziCo5Q5Juuq6w4cCpw2mqY46oCZL0/values/A:F:clear?access_token=ya29.GluOBC9EiyacIoMQtgAZlFbt-Xv_SGYivFWTfNDI86JxMRHTZVaK3lI57dxUgvNuaOr_zeUKH0DCCtmWLbpUjjgoKs_vvIEwkyYJ-Ufz9eq8sMQpCHBXGpGoV9BH");
 
+		
+		HttpExchange httpExchange;
 		URL url = new URL(
 				"https://sheets.googleapis.com/v4/spreadsheets/1n6DeLGHKvUd-_mziCo5Q5Juuq6w4cCpw2mqY46oCZL0/values/A1:A1:append?valueInputOption=USER_ENTERED&access_token=ya29.GluOBKprFqJj0fJvEoBUQamvF3JaKq73G8THuEGfkAHKwiXyc7H3NwEwulOJPhYheHFhBvf6YpCzdV0bOSapMxcL2gwhl5awzZK1uFrUzWD2WTCn5kvNDlRuZcw_");
 
-		String message ="";
-//				"{" + " \"range\": \"A1:A1\", " + "  \"majorDimension\": \"ROWS\", " + "  \"values\": [ "
-//				+ "  [\"shadab\",\"nishant\"]" + "]" + "}";
+		String message =
+				"{" + " \"range\": \"A1:A1\", " + "  \"majorDimension\": \"ROWS\", " + "  \"values\": [ "
+				+ "  [\"shadab\",\"nishant\"]" + "]" + "}";
 
 		System.out.println(message);
 
@@ -237,11 +240,11 @@ public class MtGoogle {
 			connection.setDoOutput(true);
 			connection.setRequestMethod("POST");
 			connection.setRequestProperty("Content-Type", "application/json");
-			 connection.setFixedLengthStreamingMode(0);
-			 
+			// connection.setFixedLengthStreamingMode(0);
+
 			// connection.connect();
 
-			OutputStreamWriter writer = new OutputStreamWriter(connection.getOutputStream());
+			OutputStreamWriter writer = new OutputStreamWriter(connection.getOutputStream(), "UTF-8");
 			// DataOutputStream writer = new
 			// DataOutputStream(connection.getOutputStream());
 
