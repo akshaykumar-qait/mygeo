@@ -3,15 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Tests.Login.LoginTest">
+      <class name="Tests.Google_Get_Access.GetAccessKey">
         <methods>
-          <include name="TestA_user_invalid_login_check"/>
-          <include name="TestC_user_logout_check"/>
-          <include name="Closer"/>
-          <include name="TestB_user_login_check"/>
-          <include name="Initializer"/>
+          <include name="testHeya"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- Tests.Login.LoginTest -->
+      </class> <!-- Tests.Google_Get_Access.GetAccessKey -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

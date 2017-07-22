@@ -40,7 +40,7 @@ public class InitWebdriver {
 			}
 			else if(machine_type.startsWith("Windows"))
 			{
-				System.setProperty("webdriver.gecko.driver", "resource/Linux_drivers/geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver", "resource/Windows_drivers/geckodriver.exe");
 			}
 			
 			driver = new FirefoxDriver();

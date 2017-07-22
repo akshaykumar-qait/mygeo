@@ -18,6 +18,12 @@ public class Wait_for_element {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(id)));
 
 	}
+	
+	public void waits_by_xpath(WebDriver driver, String id) {
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(id)));
+
+	}
 
 	public static void main(String[] args) {
 		System.out.println(System.getProperty("os.name"));
