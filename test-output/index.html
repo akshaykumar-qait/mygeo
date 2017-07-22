@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>testng-customsuite.xml</span>
+                    <span>C:\Users\USER\AppData\Local\Temp\testng-eclipse--1766435138\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Tests.gmail.JustCheck" hash-for-method="just_check">just_check</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Tests.Login.LoginTest" hash-for-method="TestA_user_invalid_login_check">TestA_user_invalid_login_check</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Tests.Login.LoginTest" hash-for-method="TestB_user_login_check">TestB_user_login_check</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Tests.Login.LoginTest" hash-for-method="TestC_user_logout_check">TestC_user_logout_check</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,14 +130,28 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Tests.gmail.JustCheck</span>
+              <span class="class-name">Tests.Login.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="just_check">
-                  </a> <!-- just_check -->
-                  <span class="method-name">just_check</span>
+                  <a name="TestA_user_invalid_login_check">
+                  </a> <!-- TestA_user_invalid_login_check -->
+                  <span class="method-name">TestA_user_invalid_login_check</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestB_user_login_check">
+                  </a> <!-- TestB_user_login_check -->
+                  <span class="method-name">TestB_user_login_check</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestC_user_logout_check">
+                  </a> <!-- TestC_user_logout_check -->
+                  <span class="method-name">TestC_user_logout_check</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +159,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse-483918602/testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\USER\AppData\Local\Temp\testng-eclipse--1766435138\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,11 +168,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Tests.gmail.JustCheck&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;just_check&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- Tests.gmail.JustCheck --&gt;
+      &lt;class name=&quot;Tests.Login.LoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -188,16 +208,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'just_check')
-data.setCell(0, 2, 'Tests.gmail.JustCheck')
-data.setCell(0, 3, 7607);
+data.setCell(0, 1, 'TestA_user_invalid_login_check')
+data.setCell(0, 2, 'Tests.Login.LoginTest')
+data.setCell(0, 3, 10406);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TestB_user_login_check')
+data.setCell(1, 2, 'Tests.Login.LoginTest')
+data.setCell(1, 3, 9035);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TestC_user_logout_check')
+data.setCell(2, 2, 'Tests.Login.LoginTest')
+data.setCell(2, 3, 2279);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -223,11 +251,27 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Tests.gmail.JustCheck</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">just_check</span>
+              <div class="chronological-class-name">Tests.Login.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">Initializer</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">TestA_user_invalid_login_check</span>
+                <span class="method-start">4502 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestB_user_login_check</span>
+                <span class="method-start">14916 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestC_user_logout_check</span>
+                <span class="method-start">23957 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">Closer</span>
+                <span class="method-start">26239 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

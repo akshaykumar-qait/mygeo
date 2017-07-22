@@ -51,12 +51,5 @@ public class InitWebdriver {
 		return null;
 
 	}
-	
-	public static void main(String args[]) throws IOException
-	{
-		new InitWebdriver().Browserdecider();
-	}
-	
-	
 
 }

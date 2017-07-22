@@ -2,7 +2,7 @@ package Readers;
 
 import java.io.FileReader;
 
-
+import org.apache.bcel.generic.NEW;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -38,6 +38,7 @@ public class JsonReader {
 			{
 				resFile=readopt.optionFileReader("currentpath")+"Json_Files/urls.json";
 			}
+			
 			
 			mainJsonObj = (JSONObject) parser.parse(new FileReader(resFile));
 

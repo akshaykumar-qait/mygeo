@@ -42,7 +42,7 @@ public class OptionReader {
 	
 	
 
-	public void writeit(String optionKey, Object optionValue) throws IOException {
+	public void writeit(String optionKey, String optionValue) throws IOException {
 
 		File f = new File("resource/data.properties");
 
@@ -83,7 +83,12 @@ public class OptionReader {
 		new OptionReader().writeit("b", "chrome");
 		
 	}
-	
+
+
+
+
+
+
 	
 	
 	

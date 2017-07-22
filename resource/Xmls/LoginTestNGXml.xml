@@ -3,21 +3,23 @@
 <suite name="Suite1">
 	
 
-<test name="first">
-		<classes>
-			<class name="Tests.Login.LoginTest" />
-		</classes>
 
-	</test>
 	
 	<test name="second">
 		<classes>
-			<class name="Tests.Login.LoginTest" />
-		
+			<!-- <class name="Tests.Login.LoginTest" /> -->
+			<class name="Tests.Login.Test3.Testta"></class>
+
 		</classes>
 
 	</test>
-	
+	<test name="first">
+		<classes>
+			<!-- <class name="Tests.Login.LoginTest" /> -->
+			<class name="Tests.TesttheFlow.TesttheFlow"></class>
+		</classes>
+
+	</test>
 
 	
 	<!-- <test name="test annotation demo"> -->

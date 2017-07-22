@@ -3,11 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Tests.gmail.JustCheck">
+      <class name="Tests.Login.LoginTest">
         <methods>
-          <include name="just_check"/>
+          <include name="TestA_user_invalid_login_check"/>
+          <include name="TestC_user_logout_check"/>
+          <include name="Closer"/>
+          <include name="TestB_user_login_check"/>
+          <include name="Initializer"/>
         </methods>
-      </class> <!-- Tests.gmail.JustCheck -->
+      </class> <!-- Tests.Login.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
