@@ -5,7 +5,7 @@
     <classes>
       <class name="Tests.Google_Get_Access.GetAccessKey">
         <methods>
-          <include name="testHeya"/>
+          <include name="fetch_accesstoken"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- Tests.Google_Get_Access.GetAccessKey -->

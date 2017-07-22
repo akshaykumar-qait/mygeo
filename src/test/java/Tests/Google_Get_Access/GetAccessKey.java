@@ -2,6 +2,7 @@ package Tests.Google_Get_Access;
 
 import static org.testng.Assert.fail;
 
+import java.awt.Point;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
@@ -32,8 +33,7 @@ public class GetAccessKey {
 	  private OptionReader read;
 	  
 	  
-	  @BeforeClass(alwaysRun = true)
-	  public void setUp() throws Exception {
+	  public GetAccessKey() throws Exception {
 	    driver = new InitWebdriver().Browserdecider();
 	    baseUrl = "https://developers.google.com/";
 	  //  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -41,77 +41,26 @@ public class GetAccessKey {
 	  read = new OptionReader();
 	  }
 
-	  @Test
-	  public void testHeya() throws Exception {
+	
+	  public void fetch_accesstoken() throws Exception {
+		 
+		org.openqa.selenium.Point far = new org.openqa.selenium.Point(-1000, -1000);
+		 driver.manage().window().setPosition(far);
 	    driver.get(baseUrl + "/oauthplayground/");
 	    
 	    	waits.waits_by_id(driver,"step2");
 	    driver.findElement(By.id("step2")).click();
 	    
 	    
+	    waits.waits_by_id(driver,"auth_code");
 	    driver.findElement(By.id("auth_code")).sendKeys(read.optionFileReader("google_auth_code"));
 	    driver.findElement(By.id("refresh_token")).sendKeys(read.optionFileReader("google_spreadsheet_refreshtoken"));
 	    driver.findElement(By.id("refreshAccessToken")).click();
 	    
 	    //System.out.println("hereeeeee "+driver.findElement(By.id("responce")).getText());;
-	    WebElement name = driver.findElement(By.id("access_token_field"));
+	    WebElement accesstoken = driver.findElement(By.id("access_token_field"));
 	    Thread.sleep(4000);
-	    System.out.println("hereeee"+name.getAttribute("value"));
-	    
-	    
-//	    waits.waits_by_id(driver, "authorizeApisButton");
-//
-//	    
-//	    driver.findElement(By.id("authorizeApisButton")).click();
-//	    
-//	   
-//	    waits.waits_by_id(driver, "exchangeCode");
-//
-//	    
-//	    driver.findElement(By.id("exchangeCode")).click();
-//	    driver.findElement(By.id("exchangeCode")).click();
-//	    driver.findElement(By.id("step2Title")).click();
+	    read.writeit("accesstoken_googles_spreadsheet_api",accesstoken.getAttribute("value"));
+	    driver.close();
 	  }
-
-//	  @AfterClass(alwaysRun = true)
-//	  public void tearDown() throws Exception {
-//	    driver.quit();
-//	    String verificationErrorString = verificationErrors.toString();
-//	    if (!"".equals(verificationErrorString)) {
-//	      fail(verificationErrorString);
-//	    }
-//	  }/?code=4/J-R-0MjEsy_MY-ecbpMb2ZP_6GwZhFtUzGZW3i98LfU#
-//
-//	  private boolean isElementPresent(By by) {
-//	    try {
-//	      driver.findElement(by);
-//	      return true;
-//	    } catch (NoSuchElementException e) {
-//	      return false;
-//	    }
-//	  }
-//
-//	  private boolean isAlertPresent() {
-//	    try {
-//	      driver.switchTo().alert();
-//	      return true;
-//	    } catch (NoAlertPresentException e) {
-//	      return false;
-//	    }
-//	  }
-//
-//	  private String closeAlertAndGetItsText() {
-//	    try {
-//	      Alert alert = driver.switchTo().alert();
-//	      String alertText = alert.getText();
-//	      if (acceptNextAlert) {
-//	        alert.accept();
-//	      } else {
-//	        alert.dismiss();
-//	      }
-//	      return alertText;
-//	    } finally {
-//	      acceptNextAlert = true;
-//	    }
-//	  }
-	}
+}

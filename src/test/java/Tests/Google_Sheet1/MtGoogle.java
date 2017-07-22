@@ -30,15 +30,17 @@ import com.google.gson.JsonObject;
 
 import Readers.JsonReader;
 import Readers.OptionReader;
+import Tests.Google_Get_Access.GetAccessKey;
 
 public class MtGoogle {
 
 	static OptionReader read = new OptionReader();
 
-	public MtGoogle() throws IOException {
+	public MtGoogle() throws Exception {
 		// TODO Auto-generated constructor stub
 
 		read.writeit("currentpath", "src/test/java/Tests/Google_Sheet1/");
+		new GetAccessKey().fetch_accesstoken();
 
 	}
 
@@ -167,7 +169,7 @@ public class MtGoogle {
 		// new MtGoogle().get_data();
 
 	}
- 
+
 	public static void modify() throws Exception {
 
 		JSONObject range = (JSONObject) new JSONParser().parse(new FileReader(
@@ -233,10 +235,12 @@ public class MtGoogle {
 	public static void main(String agrs[]) throws Exception {
 		MtGoogle obj = new MtGoogle();
 
-		// obj.fetchthefile();
-		// obj.deletethetable(2, 5);
+		obj.fetchthefile();
 		obj.modify();
-		// obj.writetofile();
+		obj.writetofile();
+		obj.deletethetable(2, 5);
+
+		obj.fetchthefile();
 
 	}
 
