@@ -45,7 +45,7 @@ public class GetAccessKey {
 	  public void fetch_accesstoken() throws Exception {
 		 
 		org.openqa.selenium.Point far = new org.openqa.selenium.Point(-1000, -1000);
-		 driver.manage().window().setPosition(far);
+		driver.manage().window().setPosition(far);
 	    driver.get(baseUrl + "/oauthplayground/");
 	    
 	    	waits.waits_by_id(driver,"step2");
@@ -58,8 +58,13 @@ public class GetAccessKey {
 	    driver.findElement(By.id("refreshAccessToken")).click();
 	    
 	    //System.out.println("hereeeeee "+driver.findElement(By.id("responce")).getText());;
+	 
+	 waits.waits_by_id_contains_something(driver, "access_token_field");
 	    WebElement accesstoken = driver.findElement(By.id("access_token_field"));
-	    Thread.sleep(4000);
+	    
+	    
+	    System.out.println(accesstoken.getAttribute("value"));
+	 
 	    read.writeit("accesstoken_googles_spreadsheet_api",accesstoken.getAttribute("value"));
 	    driver.close();
 	  }
