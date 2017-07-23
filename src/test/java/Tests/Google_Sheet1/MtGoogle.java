@@ -34,13 +34,20 @@ import Tests.Google_Get_Access.GetAccessKey;
 
 public class MtGoogle {
 
+	private static final String String = null;
 	static OptionReader read = new OptionReader();
+
+	static String typeis = "";
 
 	public MtGoogle() throws Exception {
 		// TODO Auto-generated constructor stub
 
-		read.writeit("currentpath", "src/test/java/Tests/Google_Sheet1/");
+		read.writeit("currentpath", "resource/SheetUse/");
 		new GetAccessKey().fetch_accesstoken();
+
+		if (read.optionFileReader("readfrom").equals("json")) {
+			typeis = "Json_Files";
+		}
 
 	}
 
@@ -61,7 +68,7 @@ public class MtGoogle {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader((connection.getInputStream())));
 		FileWriter write = new FileWriter(
-				"src/test/java/Tests/Google_Sheet1/Json_Files/actual_data_google_sheet1.json");
+				read.optionFileReader("currentpath") +   typeis + "/actual_data_google_sheet1.json");
 		// FileOutputStream write = new FileOutputStream(new
 		// File("src/test/java/Tests/Google_Sheet1/actual_data_google_sheet1.json"),
 		// false);
@@ -133,7 +140,7 @@ public class MtGoogle {
 						+ read.optionFileReader("accesstoken_googles_spreadsheet_api"));
 		String message = new JSONParser()
 				.parse(new FileReader(
-						new File("src/test/java/Tests/Google_Sheet1/Json_Files/input_data_google_sheet1.json")))
+						new File(read.optionFileReader("currentpath") +  typeis + "/input_data_google_sheet1.json")))
 				.toString();
 
 		System.out.println(message);
@@ -173,7 +180,8 @@ public class MtGoogle {
 	public static void modify() throws Exception {
 
 		JSONObject range = (JSONObject) new JSONParser().parse(new FileReader(
-				new File(read.optionFileReader("currentpath") + "Json_Files/modify_data_google_sheet1.json")));
+
+				new File(read.optionFileReader("currentpath") + typeis + "/modify_data_google_sheet1.json")));
 
 		read.writeit("range", range.get("range").toString());
 
@@ -184,7 +192,7 @@ public class MtGoogle {
 
 		String message = new JSONParser()
 				.parse(new FileReader(
-						new File("src/test/java/Tests/Google_Sheet1/Json_Files/modify_data_google_sheet1.json")))
+						new File(read.optionFileReader("currentpath") +  typeis + "/modify_data_google_sheet1.json")))
 				.toString();
 
 		System.out.println(message);
