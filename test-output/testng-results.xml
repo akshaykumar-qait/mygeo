@@ -1,121 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="2" failed="1" ignored="0" total="3" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="165143" started-at="2017-07-23T17:02:23Z" finished-at="2017-07-23T17:05:08Z">
+  <suite name="Default suite" duration-ms="9173" started-at="2017-07-24T06:55:24Z" finished-at="2017-07-24T06:55:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="165143" started-at="2017-07-23T17:02:23Z" finished-at="2017-07-23T17:05:08Z">
+    <test name="Default test" duration-ms="9173" started-at="2017-07-24T06:55:24Z" finished-at="2017-07-24T06:55:33Z">
       <class name="Tests.Login.LoginTest">
-        <test-method status="PASS" signature="Initializer()[pri:0, instance:Tests.Login.LoginTest@4bee09]" name="Initializer" is-config="true" duration-ms="4606" started-at="2017-07-23T22:32:23Z" finished-at="2017-07-23T22:32:28Z">
+        <test-method status="PASS" signature="Initializer()[pri:0, instance:Tests.Login.LoginTest@5f341870]" name="Initializer" is-config="true" duration-ms="1039" started-at="2017-07-24T12:25:24Z" finished-at="2017-07-24T12:25:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initializer -->
-        <test-method status="FAIL" signature="TestA_user_invalid_login_check()[pri:0, instance:Tests.Login.LoginTest@4bee09]" name="TestA_user_invalid_login_check" duration-ms="160127" started-at="2017-07-23T22:32:28Z" finished-at="2017-07-23T22:35:08Z">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Cannot find elements with a null id attribute.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Cannot find elements with a null id attribute.
-	at org.openqa.selenium.By.id(By.java:53)
-	at utility.Wait_for_element.waits_by_id(Wait_for_element.java:18)
-	at Tests.Login.Login_help.open_the_login_page(Login_help.java:34)
-	at Tests.Login.LoginTest.TestA_user_invalid_login_check(LoginTest.java:41)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+        <test-method status="PASS" signature="TestA_user_invalid_login_check()[pri:0, instance:Tests.Login.LoginTest@5f341870]" name="TestA_user_invalid_login_check" duration-ms="4296" started-at="2017-07-24T12:25:25Z" finished-at="2017-07-24T12:25:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestA_user_invalid_login_check -->
-        <test-method status="SKIP" signature="TestB_user_login_check()[pri:0, instance:Tests.Login.LoginTest@4bee09]" name="TestB_user_login_check" duration-ms="0" started-at="2017-07-23T22:35:08Z" depends-on-methods="Tests.Login.LoginTest.TestA_user_invalid_login_check" finished-at="2017-07-23T22:35:08Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method LoginTest.TestB_user_login_check()[pri:0, instance:Tests.Login.LoginTest@4bee09] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method LoginTest.TestB_user_login_check()[pri:0, instance:Tests.Login.LoginTest@4bee09] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method status="PASS" signature="TestB_user_login_check()[pri:0, instance:Tests.Login.LoginTest@5f341870]" name="TestB_user_login_check" duration-ms="1625" started-at="2017-07-24T12:25:29Z" depends-on-methods="Tests.Login.LoginTest.TestA_user_invalid_login_check" finished-at="2017-07-24T12:25:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestB_user_login_check -->
-        <test-method status="SKIP" signature="TestC_user_logout_check()[pri:0, instance:Tests.Login.LoginTest@4bee09]" name="TestC_user_logout_check" duration-ms="0" started-at="2017-07-23T22:35:08Z" depends-on-methods="Tests.Login.LoginTest.TestB_user_login_check" finished-at="2017-07-23T22:35:08Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method LoginTest.TestC_user_logout_check()[pri:0, instance:Tests.Login.LoginTest@4bee09] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method LoginTest.TestC_user_logout_check()[pri:0, instance:Tests.Login.LoginTest@4bee09] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method status="PASS" signature="TestC_user_logout_check()[pri:0, instance:Tests.Login.LoginTest@5f341870]" name="TestC_user_logout_check" duration-ms="2032" started-at="2017-07-24T12:25:31Z" depends-on-methods="Tests.Login.LoginTest.TestB_user_login_check" finished-at="2017-07-24T12:25:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestC_user_logout_check -->
-        <test-method status="PASS" signature="Closer()[pri:0, instance:Tests.Login.LoginTest@4bee09]" name="Closer" is-config="true" duration-ms="323" started-at="2017-07-23T22:35:08Z" finished-at="2017-07-23T22:35:08Z">
+        <test-method status="PASS" signature="Closer()[pri:0, instance:Tests.Login.LoginTest@5f341870]" name="Closer" is-config="true" duration-ms="163" started-at="2017-07-24T12:25:33Z" finished-at="2017-07-24T12:25:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Closer -->
