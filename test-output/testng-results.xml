@@ -1,33 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9173" started-at="2017-07-24T06:55:24Z" finished-at="2017-07-24T06:55:33Z">
+  <suite name="Default suite" duration-ms="8998" started-at="2017-07-25T13:01:30Z" finished-at="2017-07-25T13:01:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9173" started-at="2017-07-24T06:55:24Z" finished-at="2017-07-24T06:55:33Z">
-      <class name="Tests.Login.LoginTest">
-        <test-method status="PASS" signature="Initializer()[pri:0, instance:Tests.Login.LoginTest@5f341870]" name="Initializer" is-config="true" duration-ms="1039" started-at="2017-07-24T12:25:24Z" finished-at="2017-07-24T12:25:25Z">
+    <test name="Default test" duration-ms="8998" started-at="2017-07-25T13:01:30Z" finished-at="2017-07-25T13:01:39Z">
+      <class name="Tests.tatoc.basic.Test1">
+        <test-method status="PASS" signature="Initializer()[pri:0, instance:Tests.tatoc.basic.Test1@2f686d1f]" name="Initializer" is-config="true" duration-ms="990" started-at="2017-07-25T18:31:30Z" finished-at="2017-07-25T18:31:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initializer -->
-        <test-method status="PASS" signature="TestA_user_invalid_login_check()[pri:0, instance:Tests.Login.LoginTest@5f341870]" name="TestA_user_invalid_login_check" duration-ms="4296" started-at="2017-07-24T12:25:25Z" finished-at="2017-07-24T12:25:29Z">
+        <test-method status="PASS" signature="TestA_test_the_green_box_function()[pri:0, instance:Tests.tatoc.basic.Test1@2f686d1f]" name="TestA_test_the_green_box_function" duration-ms="3011" started-at="2017-07-25T18:31:31Z" finished-at="2017-07-25T18:31:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestA_user_invalid_login_check -->
-        <test-method status="PASS" signature="TestB_user_login_check()[pri:0, instance:Tests.Login.LoginTest@5f341870]" name="TestB_user_login_check" duration-ms="1625" started-at="2017-07-24T12:25:29Z" depends-on-methods="Tests.Login.LoginTest.TestA_user_invalid_login_check" finished-at="2017-07-24T12:25:31Z">
+        </test-method> <!-- TestA_test_the_green_box_function -->
+        <test-method status="PASS" signature="TestB_test_the_red_box_function()[pri:0, instance:Tests.tatoc.basic.Test1@2f686d1f]" name="TestB_test_the_red_box_function" duration-ms="3059" started-at="2017-07-25T18:31:34Z" depends-on-methods="Tests.tatoc.basic.Test1.TestA_test_the_green_box_function" finished-at="2017-07-25T18:31:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestB_user_login_check -->
-        <test-method status="PASS" signature="TestC_user_logout_check()[pri:0, instance:Tests.Login.LoginTest@5f341870]" name="TestC_user_logout_check" duration-ms="2032" started-at="2017-07-24T12:25:31Z" depends-on-methods="Tests.Login.LoginTest.TestB_user_login_check" finished-at="2017-07-24T12:25:33Z">
+        </test-method> <!-- TestB_test_the_red_box_function -->
+        <test-method status="PASS" signature="TestC_test_matching_for_the_two_colour_boxes()[pri:0, instance:Tests.tatoc.basic.Test1@2f686d1f]" name="TestC_test_matching_for_the_two_colour_boxes" duration-ms="494" started-at="2017-07-25T18:31:37Z" depends-on-methods="Tests.tatoc.basic.Test1.TestB_test_the_red_box_function" finished-at="2017-07-25T18:31:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestC_user_logout_check -->
-        <test-method status="PASS" signature="Closer()[pri:0, instance:Tests.Login.LoginTest@5f341870]" name="Closer" is-config="true" duration-ms="163" started-at="2017-07-24T12:25:33Z" finished-at="2017-07-24T12:25:33Z">
+        </test-method> <!-- TestC_test_matching_for_the_two_colour_boxes -->
+        <test-method status="PASS" signature="TestD_test_the_wrong_drop_of_element()[pri:0, instance:Tests.tatoc.basic.Test1@2f686d1f]" name="TestD_test_the_wrong_drop_of_element" duration-ms="267" started-at="2017-07-25T18:31:38Z" depends-on-methods="Tests.tatoc.basic.Test1.TestC_test_matching_for_the_two_colour_boxes" finished-at="2017-07-25T18:31:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestD_test_the_wrong_drop_of_element -->
+        <test-method status="PASS" signature="TestE_check_the_drag_and_drop_function()[pri:0, instance:Tests.tatoc.basic.Test1@2f686d1f]" name="TestE_check_the_drag_and_drop_function" duration-ms="259" started-at="2017-07-25T18:31:38Z" depends-on-methods="Tests.tatoc.basic.Test1.TestD_test_the_wrong_drop_of_element" finished-at="2017-07-25T18:31:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestE_check_the_drag_and_drop_function -->
+        <test-method status="PASS" signature="TestF_test_the_form_filling()[pri:0, instance:Tests.tatoc.basic.Test1@2f686d1f]" name="TestF_test_the_form_filling" duration-ms="463" started-at="2017-07-25T18:31:38Z" depends-on-methods="Tests.tatoc.basic.Test1.TestE_check_the_drag_and_drop_function" finished-at="2017-07-25T18:31:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestF_test_the_form_filling -->
+        <test-method status="PASS" signature="TestG_test_the_token_getting_cookie_setting()[pri:0, instance:Tests.tatoc.basic.Test1@2f686d1f]" name="TestG_test_the_token_getting_cookie_setting" duration-ms="321" started-at="2017-07-25T18:31:39Z" depends-on-methods="Tests.tatoc.basic.Test1.TestF_test_the_form_filling" finished-at="2017-07-25T18:31:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestG_test_the_token_getting_cookie_setting -->
+        <test-method status="PASS" signature="Closer()[pri:0, instance:Tests.tatoc.basic.Test1@2f686d1f]" name="Closer" is-config="true" duration-ms="109" started-at="2017-07-25T18:31:39Z" finished-at="2017-07-25T18:31:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Closer -->
-      </class> <!-- Tests.Login.LoginTest -->
+      </class> <!-- Tests.tatoc.basic.Test1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Tests.Login.LoginTest">
+      <class name="Tests.tatoc.basic.Test1">
         <methods>
-          <include name="TestA_user_invalid_login_check"/>
-          <include name="TestC_user_logout_check"/>
-          <include name="Closer"/>
-          <include name="TestB_user_login_check"/>
+          <include name="TestG_test_the_token_getting_cookie_setting"/>
           <include name="Initializer"/>
+          <include name="TestE_check_the_drag_and_drop_function"/>
+          <include name="TestF_test_the_form_filling"/>
+          <include name="Closer"/>
         </methods>
-      </class> <!-- Tests.Login.LoginTest -->
+      </class> <!-- Tests.tatoc.basic.Test1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

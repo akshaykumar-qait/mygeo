@@ -31,9 +31,22 @@ public class Wait_for_element {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(id)));
 
 	}
+	
+	public void waits_by_name(WebDriver driver, String name) {
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(name)));
+
+	}
 
 	public static void main(String[] args) {
 		System.out.println(System.getProperty("os.name"));
+	}
+
+	public void waits_by_linktext(WebDriver driver, String string) {
+		// TODO Auto-generated method stub
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(string)));
+		
 	}
 
 }

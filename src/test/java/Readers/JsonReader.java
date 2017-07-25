@@ -17,7 +17,7 @@ public class JsonReader {
 
 		try {
 
-			System.err.println("type is" + type);
+//			System.err.println("type is" + type);
 
 			OptionReader readopt = new OptionReader();
 			if (type.equals("ids")) {
@@ -36,7 +36,7 @@ public class JsonReader {
 
 			mainJsonObj = (JSONObject) parser.parse(new FileReader(resFile));
 
-			System.err.println(mainJsonObj);
+			//System.err.println(mainJsonObj);
 
 			JSONArray locator = (JSONArray) mainJsonObj.get(type.toLowerCase());
 			JSONObject locators = (JSONObject) locator.get(0);
