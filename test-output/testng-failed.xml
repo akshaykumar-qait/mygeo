@@ -6,7 +6,10 @@
       <class name="Tests.tatoc.advanced.Test2">
         <methods>
           <include name="Initializer"/>
-          <include name="TestA_click_on_Menu2"/>
+          <include name="TestA_check_after_vedio_playback"/>
+          <include name="TestA_check_the_database"/>
+          <include name="TestA_check_file_handle"/>
+          <include name="TestA_on_hover_menu"/>
         </methods>
       </class> <!-- Tests.tatoc.advanced.Test2 -->
     </classes>

@@ -32,14 +32,14 @@ import Readers.JsonReader;
 import Readers.OptionReader;
 import Tests.Google_Get_Access.GetAccessKey;
 
-public class MtGoogle {
+public class MtGoogleSheet {
 
 	private static final String String = null;
 	static OptionReader read = new OptionReader();
 
 	static String typeis = "";
 
-	public MtGoogle() throws Exception {
+	public MtGoogleSheet() throws Exception {
 		// TODO Auto-generated constructor stub
 
 		read.writeit("currentpath", "resource/SheetUse/");
@@ -241,7 +241,7 @@ public class MtGoogle {
 	}
 
 	public static void main(String agrs[]) throws Exception {
-		MtGoogle obj = new MtGoogle();
+		MtGoogleSheet obj = new MtGoogleSheet();
 
 		obj.fetchthefile();
 		obj.modify();

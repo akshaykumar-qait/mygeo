@@ -2,6 +2,7 @@ package utility;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver.Window;
 
 public class WebElementUse {
 	
@@ -11,6 +12,7 @@ public class WebElementUse {
 	public void webElement_open_url(WebDriver driver,String url)
 	{
 		driver.get(url);
+	
 	}
 	
 	public void webElement_click_by_id(WebDriver driver,String id)
@@ -41,6 +43,7 @@ public class WebElementUse {
 	{
 		driver.findElement(By.cssSelector(id)).sendKeys(keys);
 	}
+	
 
 	public void webElement_click_by_linkname(WebDriver driver, String linkText) {
 		// TODO Auto-generated method stub

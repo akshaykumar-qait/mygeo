@@ -157,27 +157,32 @@ public class Test1 {
 
 	}
 
-	@Test(dependsOnMethods = "TestE_check_the_drag_and_drop_function")
+	@Test//(dependsOnMethods = "TestE_check_the_drag_and_drop_function")
 	public void TestF_test_the_form_filling() throws IOException, InterruptedException {
+		
+		useElements.webElement_open_url(driver, url + data.readit("windows_url", "urls"));
 
-		waitElements.waits_by_linktext(driver, "Launch Popup Window");
-		useElements.webElement_click_by_linkname(driver, "Launch Popup Window");
-
-		// driver.close();
+		 waitElements.waits_by_linktext(driver, "Launch Popup Window");
+		 useElements.webElement_click_by_linkname(driver, "Launch Popup Window");
+		
+		
 		ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
+	//	driver.switchTo().window(driver.getWindowHandle());
+
 		driver.switchTo().window(tabs2.get(tabs2.size() - 1));
 
-		driver.switchTo().window(driver.getWindowHandle());
-
-		System.out.println("switched");
+		System.out.println(tabs2.get(1));
+		System.out.println("switched"+driver.getWindowHandles());
 
 		waitElements.waits_by_id(driver, "name");
 		useElements.webElement_fill_by_id(driver, "name", "nishant");
-
+		driver.switchTo().window(tabs2.get(tabs2.size() - 1));
 		useElements.webElement_click_by_id(driver, "submit");
 
 		System.out.println("submitted");
 
+	
+		
 		driver.switchTo().window(tabs2.get(0));
 		System.out.println("final");
 		waitElements.waits_by_linktext(driver, "Proceed");
@@ -191,9 +196,11 @@ public class Test1 {
 
 	}
 
-	@Test(dependsOnMethods = "TestF_test_the_form_filling")
+	@Test
 	public void TestG_test_the_token_getting_cookie_setting() throws IOException, InterruptedException {
 
+		useElements.webElement_open_url(driver, url + data.readit("cookie_url", "urls"));
+		waitElements.waits_by_linktext(driver, "Generate Token");
 		useElements.webElement_click_by_linkname(driver, "Generate Token");
 		waitElements.waits_by_id(driver, "token");
 		System.out.println(useElements.getText_by_id(driver, "token").replaceAll("Token:", "").trim());
