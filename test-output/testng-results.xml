@@ -1,49 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8998" started-at="2017-07-25T13:01:30Z" finished-at="2017-07-25T13:01:39Z">
+  <suite name="Default suite" duration-ms="5145" started-at="2017-07-26T07:27:54Z" finished-at="2017-07-26T07:27:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8998" started-at="2017-07-25T13:01:30Z" finished-at="2017-07-25T13:01:39Z">
-      <class name="Tests.tatoc.basic.Test1">
-        <test-method status="PASS" signature="Initializer()[pri:0, instance:Tests.tatoc.basic.Test1@2f686d1f]" name="Initializer" is-config="true" duration-ms="990" started-at="2017-07-25T18:31:30Z" finished-at="2017-07-25T18:31:31Z">
+    <test name="Default test" duration-ms="5145" started-at="2017-07-26T07:27:54Z" finished-at="2017-07-26T07:27:59Z">
+      <class name="Tests.tatoc.advanced.Test2">
+        <test-method status="PASS" signature="Initializer()[pri:0, instance:Tests.tatoc.advanced.Test2@3fee9989]" name="Initializer" is-config="true" duration-ms="3950" started-at="2017-07-26T12:57:54Z" finished-at="2017-07-26T12:57:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initializer -->
-        <test-method status="PASS" signature="TestA_test_the_green_box_function()[pri:0, instance:Tests.tatoc.basic.Test1@2f686d1f]" name="TestA_test_the_green_box_function" duration-ms="3011" started-at="2017-07-25T18:31:31Z" finished-at="2017-07-25T18:31:34Z">
+        <test-method status="PASS" signature="TestA_click_on_Menu2()[pri:0, instance:Tests.tatoc.advanced.Test2@3fee9989]" name="TestA_click_on_Menu2" duration-ms="1176" started-at="2017-07-26T12:57:58Z" finished-at="2017-07-26T12:57:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestA_test_the_green_box_function -->
-        <test-method status="PASS" signature="TestB_test_the_red_box_function()[pri:0, instance:Tests.tatoc.basic.Test1@2f686d1f]" name="TestB_test_the_red_box_function" duration-ms="3059" started-at="2017-07-25T18:31:34Z" depends-on-methods="Tests.tatoc.basic.Test1.TestA_test_the_green_box_function" finished-at="2017-07-25T18:31:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestB_test_the_red_box_function -->
-        <test-method status="PASS" signature="TestC_test_matching_for_the_two_colour_boxes()[pri:0, instance:Tests.tatoc.basic.Test1@2f686d1f]" name="TestC_test_matching_for_the_two_colour_boxes" duration-ms="494" started-at="2017-07-25T18:31:37Z" depends-on-methods="Tests.tatoc.basic.Test1.TestB_test_the_red_box_function" finished-at="2017-07-25T18:31:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestC_test_matching_for_the_two_colour_boxes -->
-        <test-method status="PASS" signature="TestD_test_the_wrong_drop_of_element()[pri:0, instance:Tests.tatoc.basic.Test1@2f686d1f]" name="TestD_test_the_wrong_drop_of_element" duration-ms="267" started-at="2017-07-25T18:31:38Z" depends-on-methods="Tests.tatoc.basic.Test1.TestC_test_matching_for_the_two_colour_boxes" finished-at="2017-07-25T18:31:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestD_test_the_wrong_drop_of_element -->
-        <test-method status="PASS" signature="TestE_check_the_drag_and_drop_function()[pri:0, instance:Tests.tatoc.basic.Test1@2f686d1f]" name="TestE_check_the_drag_and_drop_function" duration-ms="259" started-at="2017-07-25T18:31:38Z" depends-on-methods="Tests.tatoc.basic.Test1.TestD_test_the_wrong_drop_of_element" finished-at="2017-07-25T18:31:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestE_check_the_drag_and_drop_function -->
-        <test-method status="PASS" signature="TestF_test_the_form_filling()[pri:0, instance:Tests.tatoc.basic.Test1@2f686d1f]" name="TestF_test_the_form_filling" duration-ms="463" started-at="2017-07-25T18:31:38Z" depends-on-methods="Tests.tatoc.basic.Test1.TestE_check_the_drag_and_drop_function" finished-at="2017-07-25T18:31:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestF_test_the_form_filling -->
-        <test-method status="PASS" signature="TestG_test_the_token_getting_cookie_setting()[pri:0, instance:Tests.tatoc.basic.Test1@2f686d1f]" name="TestG_test_the_token_getting_cookie_setting" duration-ms="321" started-at="2017-07-25T18:31:39Z" depends-on-methods="Tests.tatoc.basic.Test1.TestF_test_the_form_filling" finished-at="2017-07-25T18:31:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestG_test_the_token_getting_cookie_setting -->
-        <test-method status="PASS" signature="Closer()[pri:0, instance:Tests.tatoc.basic.Test1@2f686d1f]" name="Closer" is-config="true" duration-ms="109" started-at="2017-07-25T18:31:39Z" finished-at="2017-07-25T18:31:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Closer -->
-      </class> <!-- Tests.tatoc.basic.Test1 -->
+        </test-method> <!-- TestA_click_on_Menu2 -->
+      </class> <!-- Tests.tatoc.advanced.Test2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

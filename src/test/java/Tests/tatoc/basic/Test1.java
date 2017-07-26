@@ -109,7 +109,7 @@ public class Test1 {
 		driver.switchTo().parentFrame();
 
 		useElements.webElement_click_by_xpath(driver, "/html/body/center/a[2]");
-		waitElements.waits_by_id(driver, "dropbox");
+		// waitElements.waits_by_id(driver, "dropbox");
 		assertThat(driver.getCurrentUrl()).isEqualTo(url + data.readit("drag_url", "urls"));
 
 	}
@@ -152,6 +152,7 @@ public class Test1 {
 
 		useElements.webElement_click_by_linkname(driver, "Proceed");
 		waitElements.waits_by_linktext(driver, "Launch Popup Window");
+
 		assertThat(driver.getCurrentUrl()).isEqualTo(url + data.readit("windows_url", "urls"));
 
 	}
@@ -159,23 +160,31 @@ public class Test1 {
 	@Test(dependsOnMethods = "TestE_check_the_drag_and_drop_function")
 	public void TestF_test_the_form_filling() throws IOException, InterruptedException {
 
-		waitElements.waits_by_xpath(driver, "/html/body/div/div[2]/a[1]");
-		useElements.webElement_click_by_xpath(driver, "/html/body/div/div[2]/a[1]");
+		waitElements.waits_by_linktext(driver, "Launch Popup Window");
+		useElements.webElement_click_by_linkname(driver, "Launch Popup Window");
 
+		// driver.close();
 		ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(tabs2.get(tabs2.size() - 1));
 
-		// driver.switchTo().window(driver.getWindowHandle());
-		//
+		driver.switchTo().window(driver.getWindowHandle());
+
+		System.out.println("switched");
 
 		waitElements.waits_by_id(driver, "name");
 		useElements.webElement_fill_by_id(driver, "name", "nishant");
+
 		useElements.webElement_click_by_id(driver, "submit");
 
-		driver.switchTo().window(tabs2.get(tabs2.size() - 2));
+		System.out.println("submitted");
 
-		waitElements.waits_by_xpath(driver, "/html/body/div/div[2]/a[2]");
-		useElements.webElement_click_by_xpath(driver, "/html/body/div/div[2]/a[2]");
+		driver.switchTo().window(tabs2.get(0));
+		System.out.println("final");
+		waitElements.waits_by_linktext(driver, "Proceed");
+
+		System.out.println("final");
+		useElements.webElement_click_by_linkname(driver, "Proceed");
+
 		waitElements.waits_by_linktext(driver, "Generate Token");
 
 		assertThat(driver.getCurrentUrl()).isEqualTo(url + data.readit("cookie_url", "urls"));
