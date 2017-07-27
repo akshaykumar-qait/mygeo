@@ -45,15 +45,15 @@ public class LoginTest {
 		assertThat(driver.getCurrentUrl())
 				.isEqualTo(data.readit("urlforinvalid2", "urls"));
 
-		new WebElementUse().webElement_click_by_id(driver, data.readit("back_id", "locators"));
+		new WebElementUse().webElement_click(driver, data.readit("back_id", "locators"));
 
 	}
 
 	@Test(dependsOnMethods ="TestA_user_invalid_login_check")
 	public void TestB_user_login_check() throws IOException, InterruptedException {
 
-		waitElements.waits_by_id(driver, data.readit("edulogo_id", "locators"));
-		useElements.webElement_click_by_id(driver, data.readit("edulogo_id", "locators"));
+		waitElements.waits_by(driver, data.readit("edulogo_id", "locators"));
+		useElements.webElement_click(driver, data.readit("edulogo_id", "locators"));
 
 		driver = temp_Obj.login(driver, data.readit("eduid1", "ids"), data.readit("correctpassid1", "password"));
 
@@ -65,8 +65,8 @@ public class LoginTest {
 	
 	@Test(dependsOnMethods ="TestB_user_login_check")
 	public void TestC_user_logout_check() throws IOException, InterruptedException {
-		waitElements.waits_by_css(driver,data.readit("logout_css","locators") );
-		useElements.webElement_click_by_css(driver, data.readit("logout_css","locators") );
+		waitElements.waits_by(driver,data.readit("logout_css","locators") );
+		useElements.webElement_click(driver, data.readit("logout_css","locators") );
 
 		
 		assertThat(driver.getCurrentUrl())

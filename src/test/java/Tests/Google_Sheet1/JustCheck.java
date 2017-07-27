@@ -39,7 +39,7 @@ public class JustCheck {
 		myr.keyPress(20);
 		my.get("https://s-www.myngconnect.com/selfRegistration/trialAccountSignUp.spr");
 
-		new Wait_for_element().waits_by_id(my, "countryInput");
+		new Wait_for_element().waits_by(my, "countryInput");
 
 		WebElement mySelectElement = my.findElement(By.id("countryInput"));
 		Select dropdown = new Select(mySelectElement);

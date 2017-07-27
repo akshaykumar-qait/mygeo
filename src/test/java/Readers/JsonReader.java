@@ -35,12 +35,11 @@ public class JsonReader {
 			}
 
 			mainJsonObj = (JSONObject) parser.parse(new FileReader(resFile));
-
 			//System.err.println(mainJsonObj);
-
 			JSONArray locator = (JSONArray) mainJsonObj.get(type.toLowerCase());
 			JSONObject locators = (JSONObject) locator.get(0);
 
+			
 			return locators.get(key).toString();
 
 		} catch (Exception e) {
