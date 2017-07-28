@@ -1,33 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14751" started-at="2017-07-27T12:28:33Z" finished-at="2017-07-27T12:28:48Z">
+  <suite name="Default suite" duration-ms="61" started-at="2017-07-28T09:36:53Z" finished-at="2017-07-28T09:36:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14751" started-at="2017-07-27T12:28:33Z" finished-at="2017-07-27T12:28:48Z">
-      <class name="Tests.Login.LoginTest">
-        <test-method status="PASS" signature="Initializer()[pri:0, instance:Tests.Login.LoginTest@2f686d1f]" name="Initializer" is-config="true" duration-ms="1073" started-at="2017-07-27T17:58:33Z" finished-at="2017-07-27T17:58:34Z">
+    <test name="Default test" duration-ms="61" started-at="2017-07-28T09:36:53Z" finished-at="2017-07-28T09:36:53Z">
+      <class name="Tests.FactoryTest.FactoryTest">
+        <test-method status="PASS" signature="testMethodOne()[pri:0, instance:Tests.FactoryTest.FactoryTest@31a5c39e]" name="testMethodOne" duration-ms="11" started-at="2017-07-28T15:06:53Z" finished-at="2017-07-28T15:06:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Initializer -->
-        <test-method status="PASS" signature="TestA_user_invalid_login_check()[pri:0, instance:Tests.Login.LoginTest@2f686d1f]" name="TestA_user_invalid_login_check" duration-ms="6146" started-at="2017-07-27T17:58:34Z" finished-at="2017-07-27T17:58:41Z">
+        </test-method> <!-- testMethodOne -->
+        <test-method status="PASS" signature="testMethodOne()[pri:0, instance:Tests.FactoryTest.FactoryTest@3f49dace]" name="testMethodOne" duration-ms="1" started-at="2017-07-28T15:06:53Z" finished-at="2017-07-28T15:06:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestA_user_invalid_login_check -->
-        <test-method status="PASS" signature="TestB_user_login_check()[pri:0, instance:Tests.Login.LoginTest@2f686d1f]" name="TestB_user_login_check" duration-ms="3522" started-at="2017-07-27T17:58:41Z" depends-on-methods="Tests.Login.LoginTest.TestA_user_invalid_login_check" finished-at="2017-07-27T17:58:44Z">
+        </test-method> <!-- testMethodOne -->
+        <test-method status="PASS" signature="testMethodOne()[pri:0, instance:Tests.FactoryTest.FactoryTest@5bcab519]" name="testMethodOne" duration-ms="0" started-at="2017-07-28T15:06:53Z" finished-at="2017-07-28T15:06:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestB_user_login_check -->
-        <test-method status="PASS" signature="TestC_user_logout_check()[pri:0, instance:Tests.Login.LoginTest@2f686d1f]" name="TestC_user_logout_check" duration-ms="3884" started-at="2017-07-27T17:58:44Z" depends-on-methods="Tests.Login.LoginTest.TestB_user_login_check" finished-at="2017-07-27T17:58:48Z">
+        </test-method> <!-- testMethodOne -->
+        <test-method status="PASS" signature="testMethodOne()[pri:0, instance:Tests.FactoryTest.FactoryTest@5f2108b5]" name="testMethodOne" duration-ms="0" started-at="2017-07-28T15:06:53Z" finished-at="2017-07-28T15:06:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestC_user_logout_check -->
-        <test-method status="PASS" signature="Closer()[pri:0, instance:Tests.Login.LoginTest@2f686d1f]" name="Closer" is-config="true" duration-ms="109" started-at="2017-07-27T17:58:48Z" finished-at="2017-07-27T17:58:48Z">
+        </test-method> <!-- testMethodOne -->
+        <test-method status="PASS" signature="testMethodOne()[pri:0, instance:Tests.FactoryTest.FactoryTest@e45f292]" name="testMethodOne" duration-ms="0" started-at="2017-07-28T15:06:53Z" finished-at="2017-07-28T15:06:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Closer -->
-      </class> <!-- Tests.Login.LoginTest -->
+        </test-method> <!-- testMethodOne -->
+        <test-method status="PASS" signature="testMethodTwo()[pri:0, instance:Tests.FactoryTest.FactoryTest@31a5c39e]" name="testMethodTwo" duration-ms="1" started-at="2017-07-28T15:06:53Z" finished-at="2017-07-28T15:06:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodTwo -->
+        <test-method status="PASS" signature="testMethodTwo()[pri:0, instance:Tests.FactoryTest.FactoryTest@3f49dace]" name="testMethodTwo" duration-ms="1" started-at="2017-07-28T15:06:53Z" finished-at="2017-07-28T15:06:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodTwo -->
+        <test-method status="PASS" signature="testMethodTwo()[pri:0, instance:Tests.FactoryTest.FactoryTest@5bcab519]" name="testMethodTwo" duration-ms="1" started-at="2017-07-28T15:06:53Z" finished-at="2017-07-28T15:06:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodTwo -->
+        <test-method status="PASS" signature="testMethodTwo()[pri:0, instance:Tests.FactoryTest.FactoryTest@5f2108b5]" name="testMethodTwo" duration-ms="1" started-at="2017-07-28T15:06:53Z" finished-at="2017-07-28T15:06:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodTwo -->
+        <test-method status="PASS" signature="testMethodTwo()[pri:0, instance:Tests.FactoryTest.FactoryTest@e45f292]" name="testMethodTwo" duration-ms="1" started-at="2017-07-28T15:06:53Z" finished-at="2017-07-28T15:06:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodTwo -->
+      </class> <!-- Tests.FactoryTest.FactoryTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
