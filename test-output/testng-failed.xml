@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Tests.Login.LoginTest">
+      <class name="Tests.DataProviders.DataProviderT">
         <methods>
-          <include name="TestA_user_invalid_login_check"/>
-          <include name="Closer"/>
-          <include name="Initializer"/>
+          <include name="testMethod"/>
         </methods>
-      </class> <!-- Tests.Login.LoginTest -->
+      </class> <!-- Tests.DataProviders.DataProviderT -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
