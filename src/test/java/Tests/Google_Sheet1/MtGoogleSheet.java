@@ -25,6 +25,7 @@ import java.util.List;
 import org.eclipse.jetty.client.HttpExchange;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import org.testng.annotations.Test;
 
 import com.google.gson.JsonObject;
 
@@ -51,11 +52,8 @@ public class MtGoogleSheet {
 
 	}
 
-	// for getting https://developers.google.com/oauthplayground
-	// accesstoken =
-	// https://developers.google.com/oauthplayground/?code=4/6Wd3DBIW0SgCgt7xxV4fwgSISa1qRe70q361yyUN3Ec
-	// https://sheets.googleapis.com/v4/spreadsheets/1n6DeLGHKvUd-_mziCo5Q5Juuq6w4cCpw2mqY46oCZL0/values/A:ZZZ?key=AIzaSyCwt2tn6wfyJY646Y-2DWYlRqVfkXqqkEg");
-
+	
+	@Test
 	public static void fetchthefile() throws Exception {
 
 		URL url = new URL(
@@ -68,10 +66,8 @@ public class MtGoogleSheet {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader((connection.getInputStream())));
 		FileWriter write = new FileWriter(
-				read.optionFileReader("currentpath") +   typeis + "/actual_data_google_sheet1.json");
-		// FileOutputStream write = new FileOutputStream(new
-		// File("src/test/java/Tests/Google_Sheet1/actual_data_google_sheet1.json"),
-		// false);
+				read.optionFileReader("currentpath") + typeis + "/actual_data_google_sheet1.json");
+
 		StringBuffer output = new StringBuffer();
 		String line = br.readLine();
 		while (line != null) {
@@ -83,6 +79,7 @@ public class MtGoogleSheet {
 
 		}
 
+		
 		System.err.println(output);
 		write.append(output);
 		write.close();
@@ -140,7 +137,7 @@ public class MtGoogleSheet {
 						+ read.optionFileReader("accesstoken_googles_spreadsheet_api"));
 		String message = new JSONParser()
 				.parse(new FileReader(
-						new File(read.optionFileReader("currentpath") +  typeis + "/input_data_google_sheet1.json")))
+						new File(read.optionFileReader("currentpath") + typeis + "/input_data_google_sheet1.json")))
 				.toString();
 
 		System.out.println(message);
@@ -192,7 +189,7 @@ public class MtGoogleSheet {
 
 		String message = new JSONParser()
 				.parse(new FileReader(
-						new File(read.optionFileReader("currentpath") +  typeis + "/modify_data_google_sheet1.json")))
+						new File(read.optionFileReader("currentpath") + typeis + "/modify_data_google_sheet1.json")))
 				.toString();
 
 		System.out.println(message);
@@ -244,11 +241,11 @@ public class MtGoogleSheet {
 		MtGoogleSheet obj = new MtGoogleSheet();
 
 		obj.fetchthefile();
-		obj.modify();
-		obj.writetofile();
-		obj.deletethetable(2, 5);
+		// obj.modify();
+		// obj.writetofile();
+		// obj.deletethetable(2, 5);
 
-		obj.fetchthefile();
+		// obj.fetchthefile();
 
 	}
 

@@ -3,6 +3,7 @@ package utility;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 
@@ -15,6 +16,39 @@ public class WebElementUse {
 	public void webElement_click(WebDriver driver, String id) throws IOException {
 
 		driver.findElement(new WebElementUse().Getbys(id)).click();
+		
+		
+//
+//		String value2[] = id.split("_");
+//		String locator = "";
+//
+//		for (int index = 0; index < value2.length - 1; index++) {
+//
+//			if (locator != "")
+//				locator = locator + "_" + value2[index];
+//
+//			else
+//				locator = locator + value2[index];
+//		}
+//		
+//		System.err.println(locator);
+//		
+//		
+//		try{
+//			
+//		
+//		System.err.println("document.getElementById('"+locator+"').click()");
+//		((JavascriptExecutor) driver).executeAsyncScript("document.getElementById('"+locator+"').click()");
+//		
+//		}
+//		catch(Exception ex)
+//		{
+//			
+//		}
+//		System.err.println(locator);
+//		
+//		
+		
 	}
 
 	public void webElement_fill(WebDriver driver, String id, String keys) throws IOException {

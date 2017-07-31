@@ -2,48 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44" started-at="2017-07-28T10:48:45Z" finished-at="2017-07-28T10:48:45Z">
+  <suite name="Default suite" duration-ms="8855" started-at="2017-07-31T14:01:31Z" finished-at="2017-07-31T14:01:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44" started-at="2017-07-28T10:48:45Z" finished-at="2017-07-28T10:48:45Z">
-      <class name="Tests.DataProviders.DataProviderT">
-        <test-method status="PASS" signature="testMethoa(java.lang.String, java.lang.String)[pri:0, instance:Tests.DataProviders.DataProviderT@5f341870]" name="testMethoa" duration-ms="16" started-at="2017-07-28T16:18:45Z" data-provider="dataMethod2" finished-at="2017-07-28T16:18:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[one]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[oneiss]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="8855" started-at="2017-07-31T14:01:31Z" finished-at="2017-07-31T14:01:40Z">
+      <class name="Tests.Login.LoginTest">
+        <test-method status="PASS" signature="Initializer()[pri:0, instance:Tests.Login.LoginTest@2f686d1f]" name="Initializer" is-config="true" duration-ms="913" started-at="2017-07-31T19:31:31Z" finished-at="2017-07-31T19:31:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMethoa -->
-        <test-method status="PASS" signature="testMethoa(java.lang.String, java.lang.String)[pri:0, instance:Tests.DataProviders.DataProviderT@5f341870]" name="testMethoa" duration-ms="1" started-at="2017-07-28T16:18:45Z" data-provider="dataMethod2" finished-at="2017-07-28T16:18:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[two]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[twoois]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- Initializer -->
+        <test-method status="PASS" signature="TestA_user_invalid_login_check()[pri:0, instance:Tests.Login.LoginTest@2f686d1f]" name="TestA_user_invalid_login_check" duration-ms="3996" started-at="2017-07-31T19:31:32Z" finished-at="2017-07-31T19:31:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMethoa -->
-        <test-method status="PASS" signature="testMethod()[pri:0, instance:Tests.DataProviders.DataProviderT@5f341870]" name="testMethod" duration-ms="1" started-at="2017-07-28T16:18:45Z" finished-at="2017-07-28T16:18:45Z">
+        </test-method> <!-- TestA_user_invalid_login_check -->
+        <test-method status="PASS" signature="TestB_user_login_check()[pri:0, instance:Tests.Login.LoginTest@2f686d1f]" name="TestB_user_login_check" duration-ms="1730" started-at="2017-07-31T19:31:36Z" depends-on-methods="Tests.Login.LoginTest.TestA_user_invalid_login_check" finished-at="2017-07-31T19:31:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMethod -->
-      </class> <!-- Tests.DataProviders.DataProviderT -->
+        </test-method> <!-- TestB_user_login_check -->
+        <test-method status="PASS" signature="TestC_user_logout_check()[pri:0, instance:Tests.Login.LoginTest@2f686d1f]" name="TestC_user_logout_check" duration-ms="2124" started-at="2017-07-31T19:31:38Z" depends-on-methods="Tests.Login.LoginTest.TestB_user_login_check" finished-at="2017-07-31T19:31:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestC_user_logout_check -->
+        <test-method status="PASS" signature="Closer()[pri:0, instance:Tests.Login.LoginTest@2f686d1f]" name="Closer" is-config="true" duration-ms="74" started-at="2017-07-31T19:31:40Z" finished-at="2017-07-31T19:31:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Closer -->
+      </class> <!-- Tests.Login.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

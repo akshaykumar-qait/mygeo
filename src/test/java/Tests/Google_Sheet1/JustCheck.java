@@ -35,8 +35,6 @@ public class JustCheck {
 		use = new WebElementUse();
 		WebDriver my = new InitWebdriver().Browserdecider();
 
-		Robot myr = new Robot();
-		myr.keyPress(20);
 		my.get("https://s-www.myngconnect.com/selfRegistration/trialAccountSignUp.spr");
 
 		new Wait_for_element().waits_by(my, "countryInput");

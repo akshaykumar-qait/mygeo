@@ -1,10 +1,12 @@
 package Tests.JavaSciptTest;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import java.io.IOException;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -15,6 +17,7 @@ import utility.InitWebdriver;
 import utility.Wait_for_element;
 import utility.WebElementUse;
 
+@Test
 public class ByJavaScript {
 
 	WebDriver driver;
@@ -34,12 +37,10 @@ public class ByJavaScript {
 
 	}
 
-	@Test
 	public void TestA_user_invalid_login_check() throws IOException, InterruptedException {
 
 		driver = temp_Obj.open_the_login_page(driver, data.readit("edubaseurl", "urls"));
 
-	//	((JavascriptExecutor) driver).executeAsyncScript("window.setTimeout(arguments[arguments.length - 1], 500);");
 	
 
 		driver = temp_Obj.login(driver, data.readit("eduid1", "ids"), data.readit("wrongpass", "password"));

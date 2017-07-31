@@ -34,25 +34,34 @@ public class Wait_for_element {
 
 		value.toLowerCase();
 		String value2[] = value.split("_");
+		String locator = "";
 
-		if (value2[1].equals("id")) {
-			return By.id(value2[0]);
-		} else if (value2[1].equals("css")) {
-			return By.cssSelector(value2[0]);
+		for (int index = 0; index < value2.length - 1; index++) {
 
-		} else if (value2[1].equals("name")) {
-			return By.name(value2[0]);
+			if (locator != "")
+				locator = locator + "_" + value2[index];
 
-		} else if (value2[1].equals("xpath")) {
-			return By.xpath(value2[0]);
+			else
+				locator = locator + value2[index];
+		}
 
-		} else if (value2[1].equals("linktext")) {
-			return By.linkText(value2[0]);
+		if (value2[value2.length - 1].equals("id")) {
+			return By.id(locator);
+		} else if (value2[value2.length - 1].equals("css")) {
+			return By.cssSelector(locator);
+
+		} else if (value2[value2.length - 1].equals("name")) {
+			return By.name(locator);
+
+		} else if (value2[value2.length - 1].equals("xpath")) {
+			return By.xpath(locator);
+
+		} else if (value2[value2.length - 1].equals("linktext")) {
+			return By.linkText(locator);
 
 		}
 
 		return null;
-
 	}
 
 }

@@ -102,17 +102,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Tests.DataProviders.DataProviderT" hash-for-method="testMethoa(one, oneiss)">testMethoa(one, oneiss)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Tests.Login.LoginTest" hash-for-method="TestA_user_invalid_login_check">TestA_user_invalid_login_check</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Tests.DataProviders.DataProviderT" hash-for-method="testMethoa(two, twoois)">testMethoa(two, twoois)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Tests.Login.LoginTest" hash-for-method="TestB_user_login_check">TestB_user_login_check</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Tests.DataProviders.DataProviderT" hash-for-method="testMethod">testMethod</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Tests.Login.LoginTest" hash-for-method="TestC_user_logout_check">TestC_user_logout_check</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -130,30 +130,28 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Tests.DataProviders.DataProviderT</span>
+              <span class="class-name">Tests.Login.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testMethoa(one, oneiss)">
-                  </a> <!-- testMethoa(one, oneiss) -->
-                  <span class="method-name">testMethoa</span>
-                  <span class="parameters">(one, oneiss)</span>
+                  <a name="TestA_user_invalid_login_check">
+                  </a> <!-- TestA_user_invalid_login_check -->
+                  <span class="method-name">TestA_user_invalid_login_check</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testMethoa(two, twoois)">
-                  </a> <!-- testMethoa(two, twoois) -->
-                  <span class="method-name">testMethoa</span>
-                  <span class="parameters">(two, twoois)</span>
+                  <a name="TestB_user_login_check">
+                  </a> <!-- TestB_user_login_check -->
+                  <span class="method-name">TestB_user_login_check</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testMethod">
-                  </a> <!-- testMethod -->
-                  <span class="method-name">testMethod</span>
+                  <a name="TestC_user_logout_check">
+                  </a> <!-- TestC_user_logout_check -->
+                  <span class="method-name">TestC_user_logout_check</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -161,7 +159,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse-7814479/testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse--479008707/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -170,7 +168,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Tests.DataProviders.DataProviderT&quot;/&gt;
+      &lt;class name=&quot;Tests.Login.LoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -212,22 +210,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testMethoa')
-data.setCell(0, 2, 'Tests.DataProviders.DataProviderT')
-data.setCell(0, 3, 16);
+data.setCell(0, 1, 'TestA_user_invalid_login_check')
+data.setCell(0, 2, 'Tests.Login.LoginTest')
+data.setCell(0, 3, 3996);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testMethod')
-data.setCell(1, 2, 'Tests.DataProviders.DataProviderT')
-data.setCell(1, 3, 1);
+data.setCell(1, 1, 'TestC_user_logout_check')
+data.setCell(1, 2, 'Tests.Login.LoginTest')
+data.setCell(1, 3, 2124);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testMethoa')
-data.setCell(2, 2, 'Tests.DataProviders.DataProviderT')
-data.setCell(2, 3, 1);
+data.setCell(2, 1, 'TestB_user_login_check')
+data.setCell(2, 2, 'Tests.Login.LoginTest')
+data.setCell(2, 3, 1730);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 ms</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -253,19 +251,27 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Tests.DataProviders.DataProviderT</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testMethoa(one, oneiss)</span>
+              <div class="chronological-class-name">Tests.Login.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">Initializer</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">TestA_user_invalid_login_check</span>
+                <span class="method-start">923 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testMethoa(two, twoois)</span>
-                <span class="method-start">17 ms</span>
+                <span class="method-name">TestB_user_login_check</span>
+                <span class="method-start">4922 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testMethod</span>
-                <span class="method-start">20 ms</span>
+                <span class="method-name">TestC_user_logout_check</span>
+                <span class="method-start">6653 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">Closer</span>
+                <span class="method-start">8778 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

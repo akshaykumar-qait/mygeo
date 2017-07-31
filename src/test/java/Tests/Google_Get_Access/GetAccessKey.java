@@ -49,7 +49,7 @@ public class GetAccessKey {
 		Thread.sleep(2000);
 		driver.findElement(By.id("step2TitlePrefix")).click();
 
-		waits.waits_by(driver, "auth_code");
+		waits.waits_by(driver, "auth_code_id");
 		driver.findElement(By.id("auth_code")).sendKeys(read.optionFileReader("google_auth_code"));
 		driver.findElement(By.id("refresh_token")).sendKeys(read.optionFileReader("google_spreadsheet_refreshtoken"));
 		driver.findElement(By.id("refreshAccessToken")).click();
@@ -57,7 +57,7 @@ public class GetAccessKey {
 		// System.out.println("hereeeeee
 		// "+driver.findElement(By.id("responce")).getText());;
 
-		waits.waits_contains_something(driver, "access_token_field");
+		waits.waits_contains_something(driver, "access_token_field_id");
 		WebElement accesstoken = driver.findElement(By.id("access_token_field"));
 
 		System.out.println(accesstoken.getAttribute("value"));
