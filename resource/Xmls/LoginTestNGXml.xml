@@ -14,18 +14,22 @@
 				<parameter name="name" value="Chrome" />
 
 
-				<methods>
-<!-- 					<include name="testMethod" /> -->
-					<exclude name="testMethoa" />
-					<exclude name="testMethod" />
-				</methods>
+			</class>
+
+
+			<class name="Tests.DataProviders.DataProviderT">
+				<parameter name="name" value="Firefox" />
+
+
+
 			</class>
 
 
 
 
-
 		</classes>
+
+
 
 	</test>
 

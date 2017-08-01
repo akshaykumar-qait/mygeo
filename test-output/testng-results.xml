@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8855" started-at="2017-07-31T14:01:31Z" finished-at="2017-07-31T14:01:40Z">
+  <suite name="Default suite" duration-ms="12796" started-at="2017-08-01T06:31:07Z" finished-at="2017-08-01T06:31:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8855" started-at="2017-07-31T14:01:31Z" finished-at="2017-07-31T14:01:40Z">
-      <class name="Tests.Login.LoginTest">
-        <test-method status="PASS" signature="Initializer()[pri:0, instance:Tests.Login.LoginTest@2f686d1f]" name="Initializer" is-config="true" duration-ms="913" started-at="2017-07-31T19:31:31Z" finished-at="2017-07-31T19:31:32Z">
+    <test name="Default test" duration-ms="12796" started-at="2017-08-01T06:31:07Z" finished-at="2017-08-01T06:31:20Z">
+      <class name="Tests.JavaSciptTest.ByJavaScript">
+        <test-method status="PASS" signature="Initializer()[pri:0, instance:Tests.JavaSciptTest.ByJavaScript@3fee9989]" name="Initializer" is-config="true" duration-ms="2038" started-at="2017-08-01T12:01:07Z" finished-at="2017-08-01T12:01:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initializer -->
-        <test-method status="PASS" signature="TestA_user_invalid_login_check()[pri:0, instance:Tests.Login.LoginTest@2f686d1f]" name="TestA_user_invalid_login_check" duration-ms="3996" started-at="2017-07-31T19:31:32Z" finished-at="2017-07-31T19:31:36Z">
+        <test-method status="PASS" signature="TestA_user_invalid_login_check()[pri:0, instance:Tests.JavaSciptTest.ByJavaScript@3fee9989]" name="TestA_user_invalid_login_check" duration-ms="6814" started-at="2017-08-01T12:01:10Z" finished-at="2017-08-01T12:01:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestA_user_invalid_login_check -->
-        <test-method status="PASS" signature="TestB_user_login_check()[pri:0, instance:Tests.Login.LoginTest@2f686d1f]" name="TestB_user_login_check" duration-ms="1730" started-at="2017-07-31T19:31:36Z" depends-on-methods="Tests.Login.LoginTest.TestA_user_invalid_login_check" finished-at="2017-07-31T19:31:38Z">
+        <test-method status="PASS" signature="TestB_user_login_check()[pri:0, instance:Tests.JavaSciptTest.ByJavaScript@3fee9989]" name="TestB_user_login_check" duration-ms="1799" started-at="2017-08-01T12:01:16Z" depends-on-methods="Tests.JavaSciptTest.ByJavaScript.TestA_user_invalid_login_check" finished-at="2017-08-01T12:01:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestB_user_login_check -->
-        <test-method status="PASS" signature="TestC_user_logout_check()[pri:0, instance:Tests.Login.LoginTest@2f686d1f]" name="TestC_user_logout_check" duration-ms="2124" started-at="2017-07-31T19:31:38Z" depends-on-methods="Tests.Login.LoginTest.TestB_user_login_check" finished-at="2017-07-31T19:31:40Z">
+        <test-method status="PASS" signature="TestC_user_logout_check()[pri:0, instance:Tests.JavaSciptTest.ByJavaScript@3fee9989]" name="TestC_user_logout_check" duration-ms="2097" started-at="2017-08-01T12:01:18Z" depends-on-methods="Tests.JavaSciptTest.ByJavaScript.TestB_user_login_check" finished-at="2017-08-01T12:01:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestC_user_logout_check -->
-        <test-method status="PASS" signature="Closer()[pri:0, instance:Tests.Login.LoginTest@2f686d1f]" name="Closer" is-config="true" duration-ms="74" started-at="2017-07-31T19:31:40Z" finished-at="2017-07-31T19:31:40Z">
+        <test-method status="PASS" signature="Closer()[pri:0, instance:Tests.JavaSciptTest.ByJavaScript@3fee9989]" name="Closer" is-config="true" duration-ms="0" started-at="2017-08-01T12:01:20Z" finished-at="2017-08-01T12:01:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Closer -->
-      </class> <!-- Tests.Login.LoginTest -->
+      </class> <!-- Tests.JavaSciptTest.ByJavaScript -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

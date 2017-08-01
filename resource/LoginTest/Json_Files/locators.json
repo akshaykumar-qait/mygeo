@@ -3,7 +3,7 @@
 		{
 			"edulogo_id": "imgEducators_id",
 			"back_id": "imgBack_id",
-			"logout_css": "div.logout.icon.logout-ctrl.header-sprite.custom-tooltip_css",
+			"logout_css": ".logout.icon.logout-ctrl.header-sprite.custom-tooltip_css",
 			"edutextf_css": "input.txtField_css",
 			"edulogin_id": "imgLogin_id",
 			"edupass_id": "passwordField_id"

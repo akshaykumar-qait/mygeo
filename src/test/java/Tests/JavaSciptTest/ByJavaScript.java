@@ -8,6 +8,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -37,6 +38,7 @@ public class ByJavaScript {
 
 	}
 
+	@Test
 	public void TestA_user_invalid_login_check() throws IOException, InterruptedException {
 
 		driver = temp_Obj.open_the_login_page(driver, data.readit("edubaseurl", "urls"));
@@ -48,6 +50,39 @@ public class ByJavaScript {
 		assertThat(driver.getCurrentUrl()).isEqualTo(data.readit("urlforinvalid2", "urls"));
 
 		new WebElementUse().webElement_click(driver, data.readit("back_id", "locators"));
+
+	}
+	
+	@Test(dependsOnMethods ="TestA_user_invalid_login_check")
+	public void TestB_user_login_check() throws IOException, InterruptedException {
+
+		waitElements.waits_by(driver, data.readit("edulogo_id", "locators"));
+		useElements.webElement_click(driver, data.readit("edulogo_id", "locators"));
+
+		driver = temp_Obj.login(driver, data.readit("eduid1", "ids"), data.readit("correctpassid1", "password"));
+
+		assertThat(driver.getCurrentUrl().substring(0, 48))
+				.isEqualTo(data.readit("urlforvalid_edu", "urls"));
+
+	}
+	
+	
+	@Test(dependsOnMethods ="TestB_user_login_check")
+	public void TestC_user_logout_check() throws IOException, InterruptedException {
+		waitElements.waits_by(driver,data.readit("logout_css","locators") );
+		useElements.webElement_click(driver, data.readit("logout_css","locators") );
+
+		
+		assertThat(driver.getCurrentUrl())
+				.isEqualTo(data.readit("edubaseurl","urls"));
+
+	}
+	
+	
+	@AfterTest
+	public void Closer() throws IOException {
+
+	//	driver.close();
 
 	}
 
